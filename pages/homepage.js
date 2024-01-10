@@ -15,15 +15,13 @@ export class HomePage{
     }
 
     async getProductName(productName){
-        const productsCount = await this.page.$$(this.productsList)
-        for(const products of productsCount){
-            if(productName === await products.textContent()){
+        const products = await this.page.$$(this.productsList)
+        for(const product of products){
+            if(productName === await product.textContent()){
                     return true
                     break;
             }
         }
-        return false
-        
     }
 
     async addProductToCart(productName, selector){

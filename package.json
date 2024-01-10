@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:headless": "npx playwright test",
-    "test:ui": "npx playwright test --ui",
-    "test:headed": "npx playwright test --headed",
-    "test:chrome": "npx playwright test --headed project chromium HomePage.spec.js",
-    "test:firefox": "npx playwright test --headed project firefox LoginPage.spec.js",
-    "test:webkit": "npx playwright test --headed project webkit LoginPage.spec.js",
-    "html:report": "npx playwright show-report"
+    "test::headless": "npx playwright test",
+    "test::ui": "npx playwright test --ui",
+    "test::headed": "npx playwright test --headed",
+    "test::chrome": "npx playwright test --headed project chromium e2e.spec.js",
+    "test::firefox": "npx playwright test --headed project firefox e2e.spec.js",
+    "test::webkit": "npx playwright test --headed project webkit e2e.spec.js",
+    "html::report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",

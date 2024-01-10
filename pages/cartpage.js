@@ -24,7 +24,7 @@ export class CartPage{
         let count=0;
         for (const prod of prods){
          //console.log("Added Products ", await prod.textContent())
-         ++count
+            count++
             if(productName === await prod.textContent()){
                 await this.page.locator(this.removeBtn).nth(count-1).click()
                 //console.log("count ", count)
@@ -37,8 +37,15 @@ export class CartPage{
         await this.page.locator(selector).click()
     }
 
-    
     async fillDetails(locator,value){
         await this.page.fill(locator,value) 
+    }
+
+    async getText(selector){
+        return await this.page.locator(selector).textContent()
+    }
+
+    async isVsibleText(selector){
+        return await this.page.locator(selector).isVisible()
     }
 }
