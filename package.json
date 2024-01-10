@@ -1,0 +1,22 @@
+{
+  "name": "playwrighte2eframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:headless": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:headed": "npx playwright test --headed",
+    "test:chrome": "npx playwright test --headed project chromium HomePage.spec.js",
+    "test:firefox": "npx playwright test --headed project firefox LoginPage.spec.js",
+    "test:webkit": "npx playwright test --headed project webkit LoginPage.spec.js",
+    "html:report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.6"
+  }
+}

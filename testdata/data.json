@@ -1,0 +1,18 @@
+{
+    "std_user": "standard_user",
+    "password" : "secret_sauce",
+    "locked_user": "locked_out_user",
+    "errorMessage": "Epic sadface: Sorry, this user has been locked out.",
+    "isProductAvailable": "Sauce Labs Bike Light",
+    "addProductCart" : "Sauce Labs Bike Light",
+    "addProductCart1" : "Sauce Labs Backpack",
+    "addProductCart2" : "Sauce Labs Bolt T-Shirt",
+    "addProductCart3" : "Test.allTheThings() T-Shirt (Red)",
+    "firstProduct": "Sauce Labs Fleece Jacket",
+    "lastProduct" : "Sauce Labs Onesie",
+    "productsToBeRemoved": "Test.allTheThings() T-Shirt (Red)",
+    "firstname": "TestFirstName",
+    "lastname": "TestLastName",
+    "pincode": "TestPincode"
+    
+}
