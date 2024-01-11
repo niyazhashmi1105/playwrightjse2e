@@ -12,7 +12,10 @@ test.beforeEach('prerequisite- login to application and landing on the homepage'
 
     const loginPage = new LoginPage(page)
     await loginPage.navigateToURL('https://www.saucedemo.com/')
+    expect(await loginPage.isVsibleText('#login-button'))
     await loginPage.doLogin(testData.std_user,testData.password)
+    
+    
 })
 
 //test.afterAll('Closing page fixture after every tests', async({page})=>{
