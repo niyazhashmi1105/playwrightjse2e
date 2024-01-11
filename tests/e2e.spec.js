@@ -13,6 +13,12 @@ test.beforeEach('prerequisite- login to application and landing on the homepage'
     await loginPage.navigateToLoginPage('https://www.saucedemo.com/')
     await loginPage.doLogin(testData.std_user,testData.password)
 })
+
+test.afterEach('Closing page fixture after every tests', async({page})=>{
+        await page.close()
+        
+})
+
 test('count the number of products', async({page})=>{
         
         const homePage = new HomePage(page)
@@ -35,7 +41,7 @@ test('Add the product into the cart and assert if it is added or not', async({pa
     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('1')
-    await cartPage.click("//button[text()='Remove']")
+    await homePage.click("//button[text()='Remove']")
 })
 
 test('Check the first and last product before applying filter and after applying the filter', async({page})=>{
@@ -46,7 +52,7 @@ test('Check the first and last product before applying filter and after applying
     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('1')
-    await cartPage.click("//button[text()='Remove']")
+    await homePage.click("//button[text()='Remove']")
 
     const firstProductBeforeSorting = await homePage.getFirstProductItem()
     expect(firstProductBeforeSorting).toContain('Sauce Labs')

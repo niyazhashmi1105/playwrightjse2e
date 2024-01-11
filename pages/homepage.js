@@ -1,11 +1,11 @@
-export class HomePage{
+import {BasePage} from '../pages/base'
+export class HomePage extends BasePage{
 
     constructor(page){
+        super(page)
         this.page = page
         this.productsList = "//div[@class='inventory_item_label']/a/div"
         this.productsCost = ".pricebar > div"  
-        this.selectOptions = ".product_sort_container option"
-        this.filterOptions = ".product_sort_container"
     }
     
     async getProductListCount(){
@@ -32,20 +32,6 @@ export class HomePage{
                     break;
             }
         }
-    }
-
-    async selectDropdownOption(value){
-
-        const options = await this.page.$$(this.selectOptions)
-        for(const option of options){
-                let val = await option.textContent()
-            if(val.includes(value)){
-                const selectedVal = await this.page.selectOption(this.filterOptions,{label:value})
-                return selectedVal
-                break
-            }
-        }
-        return null
     }
 
     async getFirstProductItem(){

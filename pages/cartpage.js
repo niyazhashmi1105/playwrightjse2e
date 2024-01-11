@@ -1,6 +1,8 @@
-export class CartPage{
+import {BasePage} from '../pages/base'
+export class CartPage extends BasePage{
 
     constructor(page){
+        super(page)
         this.page = page
         this.products = ".inventory_item_name"
         this.productPrices = ".inventory_item_price"
@@ -33,19 +35,5 @@ export class CartPage{
         }
     }
 
-    async click(selector){
-        await this.page.locator(selector).click()
-    }
-
-    async fillDetails(locator,value){
-        await this.page.fill(locator,value) 
-    }
-
-    async getText(selector){
-        return await this.page.locator(selector).textContent()
-    }
-
-    async isVsibleText(selector){
-        return await this.page.locator(selector).isVisible()
-    }
+    
 }
