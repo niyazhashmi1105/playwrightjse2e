@@ -7,8 +7,8 @@ export class BasePage{
     }
 
     
-    async navigateToLoginPage(url){
-        this.page.goto(url)
+    async navigateToURL(url){
+        await this.page.goto(url)
     }
 
     async wait(timeOut){

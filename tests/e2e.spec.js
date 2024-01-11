@@ -1,4 +1,5 @@
 const { test, expect } = require ('@playwright/test')
+//const { test,expect } = require('../testfixtures/fixtures')
 import  { LoginPage } from '../pages/loginpage'
 import { HomePage } from '../pages/homepage'
 import { CartPage } from '../pages/cartpage'
@@ -10,14 +11,14 @@ const testData = JSON.parse(fs.readFileSync(`./testdata/data.json`, `utf-8`))
 test.beforeEach('prerequisite- login to application and landing on the homepage', async({page})=>{
 
     const loginPage = new LoginPage(page)
-    await loginPage.navigateToLoginPage('https://www.saucedemo.com/')
+    await loginPage.navigateToURL('https://www.saucedemo.com/')
     await loginPage.doLogin(testData.std_user,testData.password)
 })
 
-test.afterEach('Closing page fixture after every tests', async({page})=>{
-        await page.close()
+//test.afterAll('Closing page fixture after every tests', async({page})=>{
+  //      await page.close()
         
-})
+//})
 
 test('count the number of products', async({page})=>{
         
@@ -27,7 +28,7 @@ test('count the number of products', async({page})=>{
 
 })
 
-test('check the products available or not', async({page})=>{
+test('check the product available or not', async({page})=>{
         
     const homePage = new HomePage(page)
     const isAvailable = await homePage.getProductName(testData.isProductAvailable)
@@ -37,7 +38,6 @@ test('check the products available or not', async({page})=>{
 test('Add the product into the cart and assert if it is added or not', async({page})=>{
         
     const homePage = new HomePage(page)
-    const cartPage = new CartPage(page)
     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('1')
@@ -47,8 +47,6 @@ test('Add the product into the cart and assert if it is added or not', async({pa
 test('Check the first and last product before applying filter and after applying the filter', async({page})=>{
         
     const homePage = new HomePage(page)
-    const cartPage = new CartPage(page)
-
     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('1')
@@ -82,7 +80,7 @@ test('Add to products into the cart', async({page})=>{
     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('3')
     await cartPage.click('.shopping_cart_link')
     const totalProducts = await cartPage.getProductsCount()
-    await page.waitForTimeout(3000)
+    //await cartPage.waitForTimeout(2000)
     expect(totalProducts).toBe(3)
 
     //removing product from cart
@@ -95,7 +93,7 @@ test('Add to products into the cart', async({page})=>{
     await cartPage.fillDetails('#last-name', "TestLastName")
     await cartPage.fillDetails('#postal-code', "TestPincode")
     await cartPage.click('#continue')
-    await page.waitForTimeout(5000)
+    //await cartPage.waitForTimeout(2000)
 
     //payment and shipping information
     const paymentInfo = await cartPage.getText("div[class='summary_info'] div:nth-child(2)")
