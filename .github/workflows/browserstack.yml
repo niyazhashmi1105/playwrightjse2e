@@ -29,6 +29,9 @@ jobs:
       - name: 'Running application under test'
         run: ./node_modules/.bin/http-server -p 8099 &
 
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+        
       - name: 'Running test on BrowserStack'  # Invokes the actual test script that would run on BrowserStack browsers
         run: npm run test  # See sample test script above
 
