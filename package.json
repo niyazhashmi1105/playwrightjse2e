@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test",
+    "test::web": "npx playwright test e2e.spec.js",
+    "test::api": "npx playwright test APITests.spec.js",
     "test::ui": "npx playwright test --ui",
     "test::headed": "npx playwright test --headed",
     "test::chrome": "npx playwright test --headed project chromium e2e.spec.js",
