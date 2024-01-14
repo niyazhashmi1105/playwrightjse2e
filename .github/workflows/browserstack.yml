@@ -1,4 +1,4 @@
-name: 'BrowserStack Test'
+name: 'Playwright BrowserStack WEB E2E Tests'
 on: [push, pull_request]
 jobs:
   ubuntu-job:

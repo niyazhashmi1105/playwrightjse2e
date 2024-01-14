@@ -3,7 +3,9 @@ const {test, expect} = require('@playwright/test')
 var token
 var bookingId
 //const baseURL = 'https://restful-booker.herokuapp.com'
-test.only('Create Token', async({request})=>{
+
+
+test('Create Token', async({request})=>{
 
     const response =  await request.post('https://restful-booker.herokuapp.com/auth',{
 
@@ -31,7 +33,7 @@ test('getBookingIds by all IDs', async({request})=>{
     expect(await response.status()).toBe(200)
 })
 
-test.skip('getBookingIds by filter name', async({request})=>{
+test('getBookingIds by filter name', async({request})=>{
 
     const response = await request.get('https://restful-booker.herokuapp.com/booking',{
 
@@ -45,7 +47,7 @@ test.skip('getBookingIds by filter name', async({request})=>{
 })
 
 
-test.skip('getBookingIds by checkin checkout', async({request})=>{
+test('getBookingIds by checkin checkout', async({request})=>{
 
     const response = await request.get('https://restful-booker.herokuapp.com/booking',{
 
@@ -58,7 +60,7 @@ test.skip('getBookingIds by checkin checkout', async({request})=>{
     expect(await response.status()).toBe(200)
 })
 
-test.only('Create Booking', async({request})=>{
+test('Create Booking', async({request})=>{
 
     const response = await request.post('https://restful-booker.herokuapp.com/booking',{
 
@@ -92,10 +94,10 @@ test.only('Create Booking', async({request})=>{
     expect(await res.booking.bookingdates.checkin).toEqual('2024-01-12')
 })
 
-test.only('getBooking by ID', async({request})=>{
+test('getBooking by ID', async({request})=>{
 
     const response = await request.get(`https://restful-booker.herokuapp.com/booking/${bookingId}`)
-    console.log('Get Booking by ID', await response.json())
+    //console.log('Get Booking by ID', await response.json())
     expect(await response.status()).toBe(200)
     var res = await response.json()
     expect(await res.firstname).toEqual('MD Niyaz')
@@ -136,8 +138,8 @@ test('Update Booking', async({request})=>{
 
 test('Partial Update Booking', async({request})=>{
 
-    console.log("Token: ", token)
-    console.log("Bookingid: ", bookingId)
+    console.log("Token: ", await token)
+    console.log("Bookingid: ", await bookingId)
     
     const response = await request.patch(`https://restful-booker.herokuapp.com/booking/${bookingId}`,{
 
@@ -151,14 +153,14 @@ test('Partial Update Booking', async({request})=>{
                     },
                     "additionalneeds" : "Dinner"
                 }})
-    console.log('Partial Update Booking', await response.json())
+   // console.log('Partial Update Booking', await response.json())
     expect(await response.status()).toBe(200)
     var res = await response.json()
     expect(await res.bookingdates.checkout).toEqual('2024-12-30')
     expect(await res.additionalneeds).toEqual('Dinner')
 })
 
-test.only('Delete Booking', async({request})=>{
+test('Delete Booking', async({request})=>{
 
     console.log("Token: ", token)
     console.log("Bookingid: ", bookingId)

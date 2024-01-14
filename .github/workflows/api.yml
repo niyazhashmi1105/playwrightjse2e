@@ -1,4 +1,4 @@
-name: Playwright End to End Tests
+name: Playwright API End to End Tests
 on:
   push:
     branches: [ main, master ]
@@ -20,7 +20,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npm run test::api
+      run: npx playwright test APITests.spec.js --workers=1
       env:
         HOME: /root
     - uses: actions/upload-artifact@v3
