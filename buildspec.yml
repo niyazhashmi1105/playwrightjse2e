@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  pre_build:
+    commands:
+      - npm ci
+	  - npx playwright install --with-deps
+  build:
+    commands:
+      - npm run test::web
