@@ -1,11 +1,9 @@
-name: ci
-
+name: Playwright Allure Report Integration
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
 jobs:
   build:
 
