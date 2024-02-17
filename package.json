@@ -9,13 +9,16 @@
     "test::ui": "npx playwright test --ui",
     "test::headed": "npx playwright test --headed",
     "test::chrome": "npx playwright test --headed project chromium e2e.spec.js",
-    "html::report": "npx playwright show-report"
+    "html::report": "npx playwright show-report",
+    "generate::allure-report": "allure generate ./reports/allure-results -o ./reports/allure-report --clean",
+    "open::allure-report":"allure open ./reports/allure-report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.40.1",
-    "@types/node": "^20.10.6"
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.10.6",
+    "allure-playwright": "^2.12.2"
   }
 }

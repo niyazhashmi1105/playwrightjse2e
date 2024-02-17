@@ -97,7 +97,7 @@ test('Create Booking', async({request})=>{
 test('getBooking by ID', async({request})=>{
 
     const response = await request.get(`https://restful-booker.herokuapp.com/booking/${bookingId}`)
-    //console.log('Get Booking by ID', await response.json())
+    console.log('Get Booking by ID', await response.json())
     expect(await response.status()).toBe(200)
     var res = await response.json()
     expect(await res.firstname).toEqual('MD Niyaz')
@@ -153,7 +153,7 @@ test('Partial Update Booking', async({request})=>{
                     },
                     "additionalneeds" : "Dinner"
                 }})
-   // console.log('Partial Update Booking', await response.json())
+    console.log('Partial Update Booking', await response.json())
     expect(await response.status()).toBe(200)
     var res = await response.json()
     expect(await res.bookingdates.checkout).toEqual('2024-12-30')

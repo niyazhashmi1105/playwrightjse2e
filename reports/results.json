@@ -1,0 +1,1062 @@
+{
+  "config": {
+    "configFile": "D:\\playwrightjse2eautomation\\playwright.config.js",
+    "rootDir": "D:/playwrightjse2eautomation/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "./reports/index.html"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./reports/results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./reports/results.json"
+        }
+      ],
+      [
+        "D:\\playwrightjse2eautomation\\node_modules\\allure-playwright\\dist\\index.js",
+        {
+          "outputFolder": "./reports/allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/playwrightjse2eautomation/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/playwrightjse2eautomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/playwrightjse2eautomation/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/playwrightjse2eautomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/playwrightjse2eautomation/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/playwrightjse2eautomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.41.2",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "e2e.spec.js",
+      "file": "e2e.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "count the number of products",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 7142,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:13:35.159Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-count-the-number-of-products-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-cc7550182acbd726fa10",
+          "file": "e2e.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "check the product available or not",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 7351,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:13:35.170Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-check-the-product-available-or-not-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-15fab78d55c95b66d483",
+          "file": "e2e.spec.js",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "Add the product into the cart and assert if it is added or not",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 3694,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
+                    "location": {
+                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                      "column": 76,
+                      "line": 46
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                        "column": 76,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:13:45.836Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                    "column": 76,
+                    "line": 46
+                  }
+                },
+                {
+                  "workerIndex": 2,
+                  "status": "failed",
+                  "duration": 4487,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
+                    "location": {
+                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                      "column": 76,
+                      "line": 46
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                        "column": 76,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2024-02-17T16:13:51.532Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                    "column": 76,
+                    "line": 46
+                  }
+                },
+                {
+                  "workerIndex": 4,
+                  "status": "failed",
+                  "duration": 4217,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
+                    "location": {
+                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                      "column": 76,
+                      "line": 46
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                        "column": 76,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2024-02-17T16:13:59.929Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry2\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                    "column": 76,
+                    "line": 46
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-da8aef64c1285f59849f",
+          "file": "e2e.spec.js",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "Check the first and last product before applying filter and after applying the filter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 4162,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:13:46.075Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-b8b5a55eb513c25a4c93",
+          "file": "e2e.spec.js",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "Add to products into the cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 5557,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:13:50.246Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-to-products-into-the-cart-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-7fe2ceb1ecc8eb6e4ab3",
+          "file": "e2e.spec.js",
+          "line": 71,
+          "column": 1
+        },
+        {
+          "title": "count the number of products",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 7772,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:13:58.227Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-count-the-number-of-products-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-70fadd6d2ac7245c7943",
+          "file": "e2e.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "check the product available or not",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "passed",
+                  "duration": 7947,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:14:09.436Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-check-the-product-available-or-not-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-d0c7e03b4f405f72a4ab",
+          "file": "e2e.spec.js",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "Add the product into the cart and assert if it is added or not",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "failed",
+                  "duration": 4727,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
+                    "location": {
+                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                      "column": 76,
+                      "line": 46
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                        "column": 76,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:14:09.622Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                    "column": 76,
+                    "line": 46
+                  }
+                },
+                {
+                  "workerIndex": 6,
+                  "status": "failed",
+                  "duration": 11589,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
+                    "location": {
+                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                      "column": 76,
+                      "line": 46
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                        "column": 76,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2024-02-17T16:14:21.706Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                    "column": 76,
+                    "line": 46
+                  }
+                },
+                {
+                  "workerIndex": 8,
+                  "status": "failed",
+                  "duration": 9436,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
+                    "location": {
+                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                      "column": 76,
+                      "line": 46
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                        "column": 76,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2024-02-17T16:14:45.565Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry2\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                    "column": 76,
+                    "line": 46
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-f7413951bc53c0f856cd",
+          "file": "e2e.spec.js",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "Check the first and last product before applying filter and after applying the filter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "passed",
+                  "duration": 4645,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:14:20.803Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-96bcfbd5b3ac85ae4a55",
+          "file": "e2e.spec.js",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "Add to products into the cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "passed",
+                  "duration": 7538,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:14:25.456Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-to-products-into-the-cart-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-284e727591148296514d",
+          "file": "e2e.spec.js",
+          "line": 71,
+          "column": 1
+        },
+        {
+          "title": "count the number of products",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "status": "passed",
+                  "duration": 11897,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:14:40.349Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-count-the-number-of-products-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-7b121564b48f69a960b0",
+          "file": "e2e.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "check the product available or not",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "status": "passed",
+                  "duration": 6953,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:14:55.253Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-check-the-product-available-or-not-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-466801a6c904c00c4cc2",
+          "file": "e2e.spec.js",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "Add the product into the cart and assert if it is added or not",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "status": "failed",
+                  "duration": 8732,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
+                    "location": {
+                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                      "column": 76,
+                      "line": 46
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                        "column": 76,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:15:02.064Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                    "column": 76,
+                    "line": 46
+                  }
+                },
+                {
+                  "workerIndex": 10,
+                  "status": "failed",
+                  "duration": 13465,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
+                    "location": {
+                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                      "column": 76,
+                      "line": 46
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                        "column": 76,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2024-02-17T16:15:14.977Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                    "column": 76,
+                    "line": 46
+                  }
+                },
+                {
+                  "workerIndex": 11,
+                  "status": "failed",
+                  "duration": 7031,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
+                    "location": {
+                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                      "column": 76,
+                      "line": 46
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                        "column": 76,
+                        "line": 46
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 2,
+                  "startTime": "2024-02-17T16:15:32.216Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry2\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry2\\video.webm"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
+                    "column": 76,
+                    "line": 46
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-fccd7883aaf379b378d1",
+          "file": "e2e.spec.js",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "Check the first and last product before applying filter and after applying the filter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "status": "passed",
+                  "duration": 10472,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:15:02.214Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-ead56960abf7964fc345",
+          "file": "e2e.spec.js",
+          "line": 50,
+          "column": 1
+        },
+        {
+          "title": "Add to products into the cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "status": "passed",
+                  "duration": 16608,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-17T16:15:12.695Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-to-products-into-the-cart-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-0b72ddec2bd60858e7a2",
+          "file": "e2e.spec.js",
+          "line": 71,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-02-17T16:13:33.589Z",
+    "duration": 127943.364,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

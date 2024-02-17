@@ -1,0 +1,404 @@
+<testsuites id="" name="" tests="15" failures="3" skipped="0" errors="0" time="128.123466">
+<testsuite name="e2e.spec.js" timestamp="2024-02-17T16:13:33.688Z" hostname="chromium" tests="5" failures="1" skipped="0" time="36.61" errors="0">
+<testcase name="count the number of products" classname="e2e.spec.js" time="7.142">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-count-the-number-of-products-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="check the product available or not" classname="e2e.spec.js" time="7.351">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-check-the-product-available-or-not-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Add the product into the cart and assert if it is added or not" classname="e2e.spec.js" time="12.398">
+<failure message="e2e.spec.js:41:1 Add the product into the cart and assert if it is added or not" type="FAILURE">
+<![CDATA[  [chromium] › e2e.spec.js:41:1 › Add the product into the cart and assert if it is added or not ───
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2"
+    Received: "1"
+
+      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
+      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
+    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
+         |                                                                            ^
+      47 |     await homePage.click("//button[text()='Remove']")
+      48 | })
+      49 |
+
+        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2"
+    Received: "1"
+
+      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
+      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
+    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
+         |                                                                            ^
+      47 |     await homePage.click("//button[text()='Remove']")
+      48 | })
+      49 |
+
+        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2"
+    Received: "1"
+
+      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
+      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
+    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
+         |                                                                            ^
+      47 |     await homePage.click("//button[text()='Remove']")
+      48 | })
+      49 |
+
+        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\trace.zip]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry2\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Check the first and last product before applying filter and after applying the filter" classname="e2e.spec.js" time="4.162">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Add to products into the cart" classname="e2e.spec.js" time="5.557">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Add-to-products-into-the-cart-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e.spec.js" timestamp="2024-02-17T16:13:33.688Z" hostname="firefox" tests="5" failures="1" skipped="0" time="53.654" errors="0">
+<testcase name="count the number of products" classname="e2e.spec.js" time="7.772">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-count-the-number-of-products-firefox\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="check the product available or not" classname="e2e.spec.js" time="7.947">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-check-the-product-available-or-not-firefox\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Add the product into the cart and assert if it is added or not" classname="e2e.spec.js" time="25.752">
+<failure message="e2e.spec.js:41:1 Add the product into the cart and assert if it is added or not" type="FAILURE">
+<![CDATA[  [firefox] › e2e.spec.js:41:1 › Add the product into the cart and assert if it is added or not ────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2"
+    Received: "1"
+
+      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
+      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
+    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
+         |                                                                            ^
+      47 |     await homePage.click("//button[text()='Remove']")
+      48 | })
+      49 |
+
+        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2"
+    Received: "1"
+
+      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
+      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
+    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
+         |                                                                            ^
+      47 |     await homePage.click("//button[text()='Remove']")
+      48 | })
+      49 |
+
+        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2"
+    Received: "1"
+
+      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
+      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
+    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
+         |                                                                            ^
+      47 |     await homePage.click("//button[text()='Remove']")
+      48 | })
+      49 |
+
+        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\video.webm]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\trace.zip]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry2\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Check the first and last product before applying filter and after applying the filter" classname="e2e.spec.js" time="4.645">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-firefox\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Add to products into the cart" classname="e2e.spec.js" time="7.538">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Add-to-products-into-the-cart-firefox\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e.spec.js" timestamp="2024-02-17T16:13:33.688Z" hostname="webkit" tests="5" failures="1" skipped="0" time="75.158" errors="0">
+<testcase name="count the number of products" classname="e2e.spec.js" time="11.897">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-count-the-number-of-products-webkit\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="check the product available or not" classname="e2e.spec.js" time="6.953">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-check-the-product-available-or-not-webkit\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Add the product into the cart and assert if it is added or not" classname="e2e.spec.js" time="29.228">
+<failure message="e2e.spec.js:41:1 Add the product into the cart and assert if it is added or not" type="FAILURE">
+<![CDATA[  [webkit] › e2e.spec.js:41:1 › Add the product into the cart and assert if it is added or not ─────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2"
+    Received: "1"
+
+      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
+      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
+    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
+         |                                                                            ^
+      47 |     await homePage.click("//button[text()='Remove']")
+      48 | })
+      49 |
+
+        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2"
+    Received: "1"
+
+      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
+      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
+    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
+         |                                                                            ^
+      47 |     await homePage.click("//button[text()='Remove']")
+      48 | })
+      49 |
+
+        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "2"
+    Received: "1"
+
+      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
+      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
+    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
+         |                                                                            ^
+      47 |     await homePage.click("//button[text()='Remove']")
+      48 | })
+      49 |
+
+        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\video.webm]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\video.webm]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\trace.zip]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry2\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Check the first and last product before applying filter and after applying the filter" classname="e2e.spec.js" time="10.472">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-webkit\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Add to products into the cart" classname="e2e.spec.js" time="16.608">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Add-to-products-into-the-cart-webkit\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
