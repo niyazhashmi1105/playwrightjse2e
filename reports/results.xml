@@ -1,131 +1,165 @@
-<testsuites id="" name="" tests="15" failures="3" skipped="0" errors="0" time="128.123466">
-<testsuite name="e2e.spec.js" timestamp="2024-02-17T16:13:33.688Z" hostname="chromium" tests="5" failures="1" skipped="0" time="36.61" errors="0">
-<testcase name="count the number of products" classname="e2e.spec.js" time="7.142">
+<testsuites id="" name="" tests="42" failures="0" skipped="0" errors="0" time="75.30594599999999">
+<testsuite name="APITests.spec.js" timestamp="2024-02-18T08:24:23.157Z" hostname="chromium" tests="9" failures="0" skipped="0" time="12.679" errors="0">
+<testcase name="Create Token" classname="APITests.spec.js" time="2.104">
+<system-out>
+<![CDATA[{ token: [32m'cfaf697f0760e83'[39m }
+Token : cfaf697f0760e83
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by all IDs" classname="APITests.spec.js" time="1.576">
+<system-out>
+<![CDATA[Get Booking All IDs: [
+  { bookingid: [33m1343[39m }, { bookingid: [33m719[39m },  { bookingid: [33m618[39m },
+  { bookingid: [33m1855[39m }, { bookingid: [33m1821[39m }, { bookingid: [33m151[39m },
+  { bookingid: [33m1443[39m }, { bookingid: [33m81[39m },   { bookingid: [33m502[39m },
+  { bookingid: [33m109[39m },  { bookingid: [33m1507[39m }, { bookingid: [33m769[39m },
+  { bookingid: [33m876[39m },  { bookingid: [33m424[39m },  { bookingid: [33m936[39m },
+  { bookingid: [33m29[39m },   { bookingid: [33m440[39m },  { bookingid: [33m1174[39m },
+  { bookingid: [33m2098[39m }, { bookingid: [33m1405[39m }, { bookingid: [33m1418[39m },
+  { bookingid: [33m131[39m },  { bookingid: [33m1394[39m }, { bookingid: [33m1626[39m },
+  { bookingid: [33m1645[39m }, { bookingid: [33m879[39m },  { bookingid: [33m764[39m },
+  { bookingid: [33m1887[39m }, { bookingid: [33m1121[39m }, { bookingid: [33m1921[39m },
+  { bookingid: [33m1334[39m }, { bookingid: [33m1562[39m }, { bookingid: [33m242[39m },
+  { bookingid: [33m1065[39m }, { bookingid: [33m1180[39m }, { bookingid: [33m2041[39m },
+  { bookingid: [33m920[39m },  { bookingid: [33m725[39m },  { bookingid: [33m1619[39m },
+  { bookingid: [33m1450[39m }, { bookingid: [33m1939[39m }, { bookingid: [33m1880[39m },
+  { bookingid: [33m183[39m },  { bookingid: [33m232[39m },  { bookingid: [33m2067[39m },
+  { bookingid: [33m451[39m },  { bookingid: [33m19[39m },   { bookingid: [33m619[39m },
+  { bookingid: [33m1660[39m }, { bookingid: [33m1781[39m }, { bookingid: [33m1123[39m },
+  { bookingid: [33m117[39m },  { bookingid: [33m1402[39m }, { bookingid: [33m1142[39m },
+  { bookingid: [33m1339[39m }, { bookingid: [33m286[39m },  { bookingid: [33m782[39m },
+  { bookingid: [33m1737[39m }, { bookingid: [33m837[39m },  { bookingid: [33m1151[39m },
+  { bookingid: [33m121[39m },  { bookingid: [33m1665[39m }, { bookingid: [33m2004[39m },
+  { bookingid: [33m1792[39m }, { bookingid: [33m1631[39m }, { bookingid: [33m13[39m },
+  { bookingid: [33m1109[39m }, { bookingid: [33m1430[39m }, { bookingid: [33m268[39m },
+  { bookingid: [33m1424[39m }, { bookingid: [33m1896[39m }, { bookingid: [33m390[39m },
+  { bookingid: [33m1810[39m }, { bookingid: [33m1992[39m }, { bookingid: [33m309[39m },
+  { bookingid: [33m1659[39m }, { bookingid: [33m671[39m },  { bookingid: [33m40[39m },
+  { bookingid: [33m624[39m },  { bookingid: [33m1942[39m }, { bookingid: [33m259[39m },
+  { bookingid: [33m1362[39m }, { bookingid: [33m1761[39m }, { bookingid: [33m612[39m },
+  { bookingid: [33m1965[39m }, { bookingid: [33m1593[39m }, { bookingid: [33m522[39m },
+  { bookingid: [33m568[39m },  { bookingid: [33m281[39m },  { bookingid: [33m1986[39m },
+  { bookingid: [33m1863[39m }, { bookingid: [33m885[39m },  { bookingid: [33m1069[39m },
+  { bookingid: [33m617[39m },  { bookingid: [33m1556[39m }, { bookingid: [33m1128[39m },
+  { bookingid: [33m1244[39m }, { bookingid: [33m265[39m },  { bookingid: [33m454[39m },
+  { bookingid: [33m663[39m },
+  ... 1347 more items
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by filter name" classname="APITests.spec.js" time="1.294">
+<system-out>
+<![CDATA[Get Booking by name []
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by checkin checkout" classname="APITests.spec.js" time="1.258">
+<system-out>
+<![CDATA[Get Booking by checkin/checkout []
+]]>
+</system-out>
+</testcase>
+<testcase name="Create Booking" classname="APITests.spec.js" time="1.282">
+<system-out>
+<![CDATA[Create booking {
+  bookingid: [33m2145[39m,
+  booking: {
+    firstname: [32m'MD Niyaz'[39m,
+    lastname: [32m'Hashmi'[39m,
+    totalprice: [33m8279[39m,
+    depositpaid: [33mtrue[39m,
+    bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+    additionalneeds: [32m'Lunch'[39m
+  }
+}
+Booking Id:  [33m2145[39m
+]]>
+</system-out>
+</testcase>
+<testcase name="getBooking by ID" classname="APITests.spec.js" time="1.209">
+<system-out>
+<![CDATA[Get Booking by ID {
+  firstname: [32m'MD Niyaz'[39m,
+  lastname: [32m'Hashmi'[39m,
+  totalprice: [33m8279[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+  additionalneeds: [32m'Lunch'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Update Booking" classname="APITests.spec.js" time="1.271">
+<system-out>
+<![CDATA[Token:  cfaf697f0760e83
+Bookingid:  [33m2145[39m
+Update Booking {
+  firstname: [32m'MD Niyaz update'[39m,
+  lastname: [32m'Hashmi update'[39m,
+  totalprice: [33m479[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+  additionalneeds: [32m'Lunch'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Partial Update Booking" classname="APITests.spec.js" time="1.278">
+<system-out>
+<![CDATA[Token:  cfaf697f0760e83
+Bookingid:  [33m2145[39m
+Partial Update Booking {
+  firstname: [32m'MD Niyaz update'[39m,
+  lastname: [32m'Hashmi update'[39m,
+  totalprice: [33m479[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'0NaN-aN-aN'[39m, checkout: [32m'2024-12-30'[39m },
+  additionalneeds: [32m'Dinner'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Booking" classname="APITests.spec.js" time="1.407">
+<system-out>
+<![CDATA[Token:  cfaf697f0760e83
+Bookingid:  [33m2145[39m
+Delete Booking [33m403[39m
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e.spec.js" timestamp="2024-02-18T08:24:23.157Z" hostname="chromium" tests="5" failures="0" skipped="0" time="15.557" errors="0">
+<testcase name="count the number of products" classname="e2e.spec.js" time="3.304">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-count-the-number-of-products-chromium\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="check the product available or not" classname="e2e.spec.js" time="7.351">
+<testcase name="check the product available or not" classname="e2e.spec.js" time="2.539">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-check-the-product-available-or-not-chromium\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Add the product into the cart and assert if it is added or not" classname="e2e.spec.js" time="12.398">
-<failure message="e2e.spec.js:41:1 Add the product into the cart and assert if it is added or not" type="FAILURE">
-<![CDATA[  [chromium] › e2e.spec.js:41:1 › Add the product into the cart and assert if it is added or not ───
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: "2"
-    Received: "1"
-
-      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
-      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
-    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
-         |                                                                            ^
-      47 |     await homePage.click("//button[text()='Remove']")
-      48 | })
-      49 |
-
-        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: "2"
-    Received: "1"
-
-      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
-      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
-    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
-         |                                                                            ^
-      47 |     await homePage.click("//button[text()='Remove']")
-      48 | })
-      49 |
-
-        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: "2"
-    Received: "1"
-
-      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
-      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
-    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
-         |                                                                            ^
-      47 |     await homePage.click("//button[text()='Remove']")
-      48 | })
-      49 |
-
-        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry2\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry2\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Add the product into the cart and assert if it is added or not" classname="e2e.spec.js" time="2.726">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\test-failed-1.png]]
-
 [[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\video.webm]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\trace.zip]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry2\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry2\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Check the first and last product before applying filter and after applying the filter" classname="e2e.spec.js" time="4.162">
+<testcase name="Check the first and last product before applying filter and after applying the filter" classname="e2e.spec.js" time="2.791">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-chromium\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Add to products into the cart" classname="e2e.spec.js" time="5.557">
+<testcase name="Add to products into the cart" classname="e2e.spec.js" time="4.197">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-Add-to-products-into-the-cart-chromium\video.webm]]
@@ -133,133 +167,167 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="e2e.spec.js" timestamp="2024-02-17T16:13:33.688Z" hostname="firefox" tests="5" failures="1" skipped="0" time="53.654" errors="0">
-<testcase name="count the number of products" classname="e2e.spec.js" time="7.772">
+<testsuite name="APITests.spec.js" timestamp="2024-02-18T08:24:23.157Z" hostname="firefox" tests="9" failures="0" skipped="0" time="12.749" errors="0">
+<testcase name="Create Token" classname="APITests.spec.js" time="1.9">
+<system-out>
+<![CDATA[{ token: [32m'5872b16f00d998e'[39m }
+Token : 5872b16f00d998e
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by all IDs" classname="APITests.spec.js" time="1.68">
+<system-out>
+<![CDATA[Get Booking All IDs: [
+  { bookingid: [33m1343[39m }, { bookingid: [33m719[39m },  { bookingid: [33m618[39m },
+  { bookingid: [33m1855[39m }, { bookingid: [33m1821[39m }, { bookingid: [33m151[39m },
+  { bookingid: [33m1443[39m }, { bookingid: [33m81[39m },   { bookingid: [33m502[39m },
+  { bookingid: [33m2171[39m }, { bookingid: [33m109[39m },  { bookingid: [33m1507[39m },
+  { bookingid: [33m769[39m },  { bookingid: [33m876[39m },  { bookingid: [33m424[39m },
+  { bookingid: [33m936[39m },  { bookingid: [33m29[39m },   { bookingid: [33m440[39m },
+  { bookingid: [33m1174[39m }, { bookingid: [33m2098[39m }, { bookingid: [33m1405[39m },
+  { bookingid: [33m1418[39m }, { bookingid: [33m131[39m },  { bookingid: [33m1394[39m },
+  { bookingid: [33m1626[39m }, { bookingid: [33m1645[39m }, { bookingid: [33m2191[39m },
+  { bookingid: [33m879[39m },  { bookingid: [33m764[39m },  { bookingid: [33m1887[39m },
+  { bookingid: [33m2142[39m }, { bookingid: [33m1121[39m }, { bookingid: [33m1921[39m },
+  { bookingid: [33m1334[39m }, { bookingid: [33m1562[39m }, { bookingid: [33m242[39m },
+  { bookingid: [33m1065[39m }, { bookingid: [33m1180[39m }, { bookingid: [33m2041[39m },
+  { bookingid: [33m920[39m },  { bookingid: [33m725[39m },  { bookingid: [33m1619[39m },
+  { bookingid: [33m1450[39m }, { bookingid: [33m1939[39m }, { bookingid: [33m1880[39m },
+  { bookingid: [33m183[39m },  { bookingid: [33m232[39m },  { bookingid: [33m2067[39m },
+  { bookingid: [33m451[39m },  { bookingid: [33m19[39m },   { bookingid: [33m619[39m },
+  { bookingid: [33m1660[39m }, { bookingid: [33m1781[39m }, { bookingid: [33m1123[39m },
+  { bookingid: [33m117[39m },  { bookingid: [33m1402[39m }, { bookingid: [33m1142[39m },
+  { bookingid: [33m1339[39m }, { bookingid: [33m286[39m },  { bookingid: [33m2222[39m },
+  { bookingid: [33m782[39m },  { bookingid: [33m1737[39m }, { bookingid: [33m837[39m },
+  { bookingid: [33m1151[39m }, { bookingid: [33m121[39m },  { bookingid: [33m1665[39m },
+  { bookingid: [33m2004[39m }, { bookingid: [33m1792[39m }, { bookingid: [33m1631[39m },
+  { bookingid: [33m13[39m },   { bookingid: [33m1109[39m }, { bookingid: [33m1430[39m },
+  { bookingid: [33m268[39m },  { bookingid: [33m1424[39m }, { bookingid: [33m1896[39m },
+  { bookingid: [33m390[39m },  { bookingid: [33m1810[39m }, { bookingid: [33m1992[39m },
+  { bookingid: [33m309[39m },  { bookingid: [33m1659[39m }, { bookingid: [33m671[39m },
+  { bookingid: [33m40[39m },   { bookingid: [33m624[39m },  { bookingid: [33m1942[39m },
+  { bookingid: [33m259[39m },  { bookingid: [33m2186[39m }, { bookingid: [33m1362[39m },
+  { bookingid: [33m2132[39m }, { bookingid: [33m1761[39m }, { bookingid: [33m612[39m },
+  { bookingid: [33m1965[39m }, { bookingid: [33m1593[39m }, { bookingid: [33m522[39m },
+  { bookingid: [33m568[39m },  { bookingid: [33m2173[39m }, { bookingid: [33m281[39m },
+  { bookingid: [33m1986[39m }, { bookingid: [33m1863[39m }, { bookingid: [33m885[39m },
+  { bookingid: [33m1069[39m },
+  ... 1429 more items
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by filter name" classname="APITests.spec.js" time="1.227">
+<system-out>
+<![CDATA[Get Booking by name []
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by checkin checkout" classname="APITests.spec.js" time="1.294">
+<system-out>
+<![CDATA[Get Booking by checkin/checkout []
+]]>
+</system-out>
+</testcase>
+<testcase name="Create Booking" classname="APITests.spec.js" time="1.22">
+<system-out>
+<![CDATA[Create booking {
+  bookingid: [33m2260[39m,
+  booking: {
+    firstname: [32m'MD Niyaz'[39m,
+    lastname: [32m'Hashmi'[39m,
+    totalprice: [33m8279[39m,
+    depositpaid: [33mtrue[39m,
+    bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+    additionalneeds: [32m'Lunch'[39m
+  }
+}
+Booking Id:  [33m2260[39m
+]]>
+</system-out>
+</testcase>
+<testcase name="getBooking by ID" classname="APITests.spec.js" time="1.282">
+<system-out>
+<![CDATA[Get Booking by ID {
+  firstname: [32m'MD Niyaz'[39m,
+  lastname: [32m'Hashmi'[39m,
+  totalprice: [33m8279[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+  additionalneeds: [32m'Lunch'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Update Booking" classname="APITests.spec.js" time="1.526">
+<system-out>
+<![CDATA[Token:  5872b16f00d998e
+Bookingid:  [33m2260[39m
+Update Booking {
+  firstname: [32m'MD Niyaz update'[39m,
+  lastname: [32m'Hashmi update'[39m,
+  totalprice: [33m479[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+  additionalneeds: [32m'Lunch'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Partial Update Booking" classname="APITests.spec.js" time="1.284">
+<system-out>
+<![CDATA[Token:  5872b16f00d998e
+Bookingid:  [33m2260[39m
+Partial Update Booking {
+  firstname: [32m'MD Niyaz update'[39m,
+  lastname: [32m'Hashmi update'[39m,
+  totalprice: [33m479[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'0NaN-aN-aN'[39m, checkout: [32m'2024-12-30'[39m },
+  additionalneeds: [32m'Dinner'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Booking" classname="APITests.spec.js" time="1.336">
+<system-out>
+<![CDATA[Token:  5872b16f00d998e
+Bookingid:  [33m2260[39m
+Delete Booking [33m403[39m
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e.spec.js" timestamp="2024-02-18T08:24:23.157Z" hostname="firefox" tests="5" failures="0" skipped="0" time="22.332" errors="0">
+<testcase name="count the number of products" classname="e2e.spec.js" time="6.305">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-count-the-number-of-products-firefox\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="check the product available or not" classname="e2e.spec.js" time="7.947">
+<testcase name="check the product available or not" classname="e2e.spec.js" time="3.29">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-check-the-product-available-or-not-firefox\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Add the product into the cart and assert if it is added or not" classname="e2e.spec.js" time="25.752">
-<failure message="e2e.spec.js:41:1 Add the product into the cart and assert if it is added or not" type="FAILURE">
-<![CDATA[  [firefox] › e2e.spec.js:41:1 › Add the product into the cart and assert if it is added or not ────
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: "2"
-    Received: "1"
-
-      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
-      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
-    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
-         |                                                                            ^
-      47 |     await homePage.click("//button[text()='Remove']")
-      48 | })
-      49 |
-
-        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: "2"
-    Received: "1"
-
-      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
-      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
-    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
-         |                                                                            ^
-      47 |     await homePage.click("//button[text()='Remove']")
-      48 | })
-      49 |
-
-        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: "2"
-    Received: "1"
-
-      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
-      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
-    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
-         |                                                                            ^
-      47 |     await homePage.click("//button[text()='Remove']")
-      48 | })
-      49 |
-
-        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry2\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry2\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Add the product into the cart and assert if it is added or not" classname="e2e.spec.js" time="3.946">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\test-failed-1.png]]
-
 [[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\video.webm]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\video.webm]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\trace.zip]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry2\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry2\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Check the first and last product before applying filter and after applying the filter" classname="e2e.spec.js" time="4.645">
+<testcase name="Check the first and last product before applying filter and after applying the filter" classname="e2e.spec.js" time="3.718">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-firefox\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Add to products into the cart" classname="e2e.spec.js" time="7.538">
+<testcase name="Add to products into the cart" classname="e2e.spec.js" time="5.073">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-Add-to-products-into-the-cart-firefox\video.webm]]
@@ -267,133 +335,167 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="e2e.spec.js" timestamp="2024-02-17T16:13:33.688Z" hostname="webkit" tests="5" failures="1" skipped="0" time="75.158" errors="0">
-<testcase name="count the number of products" classname="e2e.spec.js" time="11.897">
+<testsuite name="APITests.spec.js" timestamp="2024-02-18T08:24:23.157Z" hostname="webkit" tests="9" failures="0" skipped="0" time="12.855" errors="0">
+<testcase name="Create Token" classname="APITests.spec.js" time="1.58">
+<system-out>
+<![CDATA[{ token: [32m'640bae83e6fb006'[39m }
+Token : 640bae83e6fb006
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by all IDs" classname="APITests.spec.js" time="1.764">
+<system-out>
+<![CDATA[Get Booking All IDs: [
+  { bookingid: [33m1343[39m }, { bookingid: [33m719[39m },  { bookingid: [33m618[39m },
+  { bookingid: [33m1855[39m }, { bookingid: [33m1821[39m }, { bookingid: [33m151[39m },
+  { bookingid: [33m1443[39m }, { bookingid: [33m81[39m },   { bookingid: [33m502[39m },
+  { bookingid: [33m2171[39m }, { bookingid: [33m109[39m },  { bookingid: [33m1507[39m },
+  { bookingid: [33m769[39m },  { bookingid: [33m876[39m },  { bookingid: [33m424[39m },
+  { bookingid: [33m936[39m },  { bookingid: [33m29[39m },   { bookingid: [33m2322[39m },
+  { bookingid: [33m440[39m },  { bookingid: [33m1174[39m }, { bookingid: [33m2098[39m },
+  { bookingid: [33m1405[39m }, { bookingid: [33m1418[39m }, { bookingid: [33m131[39m },
+  { bookingid: [33m1394[39m }, { bookingid: [33m1626[39m }, { bookingid: [33m1645[39m },
+  { bookingid: [33m2191[39m }, { bookingid: [33m2277[39m }, { bookingid: [33m879[39m },
+  { bookingid: [33m764[39m },  { bookingid: [33m1887[39m }, { bookingid: [33m2142[39m },
+  { bookingid: [33m1121[39m }, { bookingid: [33m1921[39m }, { bookingid: [33m1334[39m },
+  { bookingid: [33m1562[39m }, { bookingid: [33m242[39m },  { bookingid: [33m1065[39m },
+  { bookingid: [33m1180[39m }, { bookingid: [33m2041[39m }, { bookingid: [33m920[39m },
+  { bookingid: [33m2242[39m }, { bookingid: [33m725[39m },  { bookingid: [33m1619[39m },
+  { bookingid: [33m1450[39m }, { bookingid: [33m1939[39m }, { bookingid: [33m1880[39m },
+  { bookingid: [33m183[39m },  { bookingid: [33m232[39m },  { bookingid: [33m2067[39m },
+  { bookingid: [33m451[39m },  { bookingid: [33m19[39m },   { bookingid: [33m619[39m },
+  { bookingid: [33m1660[39m }, { bookingid: [33m1781[39m }, { bookingid: [33m1123[39m },
+  { bookingid: [33m117[39m },  { bookingid: [33m1402[39m }, { bookingid: [33m1142[39m },
+  { bookingid: [33m1339[39m }, { bookingid: [33m286[39m },  { bookingid: [33m2222[39m },
+  { bookingid: [33m2287[39m }, { bookingid: [33m782[39m },  { bookingid: [33m1737[39m },
+  { bookingid: [33m837[39m },  { bookingid: [33m1151[39m }, { bookingid: [33m121[39m },
+  { bookingid: [33m1665[39m }, { bookingid: [33m2004[39m }, { bookingid: [33m1792[39m },
+  { bookingid: [33m1631[39m }, { bookingid: [33m13[39m },   { bookingid: [33m1109[39m },
+  { bookingid: [33m1430[39m }, { bookingid: [33m268[39m },  { bookingid: [33m1424[39m },
+  { bookingid: [33m1896[39m }, { bookingid: [33m390[39m },  { bookingid: [33m1810[39m },
+  { bookingid: [33m1992[39m }, { bookingid: [33m309[39m },  { bookingid: [33m1659[39m },
+  { bookingid: [33m671[39m },  { bookingid: [33m40[39m },   { bookingid: [33m624[39m },
+  { bookingid: [33m1942[39m }, { bookingid: [33m259[39m },  { bookingid: [33m2186[39m },
+  { bookingid: [33m1362[39m }, { bookingid: [33m2132[39m }, { bookingid: [33m1761[39m },
+  { bookingid: [33m612[39m },  { bookingid: [33m1965[39m }, { bookingid: [33m1593[39m },
+  { bookingid: [33m522[39m },  { bookingid: [33m568[39m },  { bookingid: [33m2173[39m },
+  { bookingid: [33m281[39m },
+  ... 1521 more items
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by filter name" classname="APITests.spec.js" time="1.453">
+<system-out>
+<![CDATA[Get Booking by name []
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by checkin checkout" classname="APITests.spec.js" time="1.51">
+<system-out>
+<![CDATA[Get Booking by checkin/checkout []
+]]>
+</system-out>
+</testcase>
+<testcase name="Create Booking" classname="APITests.spec.js" time="1.301">
+<system-out>
+<![CDATA[Create booking {
+  bookingid: [33m2397[39m,
+  booking: {
+    firstname: [32m'MD Niyaz'[39m,
+    lastname: [32m'Hashmi'[39m,
+    totalprice: [33m8279[39m,
+    depositpaid: [33mtrue[39m,
+    bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+    additionalneeds: [32m'Lunch'[39m
+  }
+}
+Booking Id:  [33m2397[39m
+]]>
+</system-out>
+</testcase>
+<testcase name="getBooking by ID" classname="APITests.spec.js" time="1.225">
+<system-out>
+<![CDATA[Get Booking by ID {
+  firstname: [32m'MD Niyaz'[39m,
+  lastname: [32m'Hashmi'[39m,
+  totalprice: [33m8279[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+  additionalneeds: [32m'Lunch'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Update Booking" classname="APITests.spec.js" time="1.322">
+<system-out>
+<![CDATA[Token:  640bae83e6fb006
+Bookingid:  [33m2397[39m
+Update Booking {
+  firstname: [32m'MD Niyaz update'[39m,
+  lastname: [32m'Hashmi update'[39m,
+  totalprice: [33m479[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+  additionalneeds: [32m'Lunch'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Partial Update Booking" classname="APITests.spec.js" time="1.466">
+<system-out>
+<![CDATA[Token:  640bae83e6fb006
+Bookingid:  [33m2397[39m
+Partial Update Booking {
+  firstname: [32m'MD Niyaz update'[39m,
+  lastname: [32m'Hashmi update'[39m,
+  totalprice: [33m479[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'0NaN-aN-aN'[39m, checkout: [32m'2024-12-30'[39m },
+  additionalneeds: [32m'Dinner'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Booking" classname="APITests.spec.js" time="1.234">
+<system-out>
+<![CDATA[Token:  640bae83e6fb006
+Bookingid:  [33m2397[39m
+Delete Booking [33m403[39m
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e.spec.js" timestamp="2024-02-18T08:24:23.157Z" hostname="webkit" tests="5" failures="0" skipped="0" time="27.089" errors="0">
+<testcase name="count the number of products" classname="e2e.spec.js" time="4.248">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-count-the-number-of-products-webkit\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="check the product available or not" classname="e2e.spec.js" time="6.953">
+<testcase name="check the product available or not" classname="e2e.spec.js" time="3.727">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-check-the-product-available-or-not-webkit\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Add the product into the cart and assert if it is added or not" classname="e2e.spec.js" time="29.228">
-<failure message="e2e.spec.js:41:1 Add the product into the cart and assert if it is added or not" type="FAILURE">
-<![CDATA[  [webkit] › e2e.spec.js:41:1 › Add the product into the cart and assert if it is added or not ─────
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: "2"
-    Received: "1"
-
-      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
-      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
-    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
-         |                                                                            ^
-      47 |     await homePage.click("//button[text()='Remove']")
-      48 | })
-      49 |
-
-        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: "2"
-    Received: "1"
-
-      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
-      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
-    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
-         |                                                                            ^
-      47 |     await homePage.click("//button[text()='Remove']")
-      48 | })
-      49 |
-
-        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toBe(expected) // Object.is equality
-
-    Expected: "2"
-    Received: "1"
-
-      44 |     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
-      45 |     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
-    > 46 |     expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('2')
-         |                                                                            ^
-      47 |     await homePage.click("//button[text()='Remove']")
-      48 | })
-      49 |
-
-        at D:\playwrightjse2eautomation\tests\e2e.spec.js:46:76
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry2\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry2\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Add the product into the cart and assert if it is added or not" classname="e2e.spec.js" time="4.844">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\test-failed-1.png]]
-
 [[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\video.webm]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\video.webm]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\trace.zip]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry2\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry2\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Check the first and last product before applying filter and after applying the filter" classname="e2e.spec.js" time="10.472">
+<testcase name="Check the first and last product before applying filter and after applying the filter" classname="e2e.spec.js" time="4.998">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-webkit\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Add to products into the cart" classname="e2e.spec.js" time="16.608">
+<testcase name="Add to products into the cart" classname="e2e.spec.js" time="9.272">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\e2e-Add-to-products-into-the-cart-webkit\video.webm]]

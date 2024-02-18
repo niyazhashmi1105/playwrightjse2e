@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test::headless": "npx playwright test",
     "test::web": "npx playwright test e2e.spec.js",
     "test::api": "npx playwright test APITests.spec.js --workers=1",
     "test::ui": "npx playwright test --ui",
     "test::headed": "npx playwright test --headed",
     "test::chrome": "npx playwright test --headed project chromium e2e.spec.js",
     "html::report": "npx playwright show-report",
-    "generate::allure-report": "allure generate ./reports/allure-results -o ./reports/allure-report --clean",
-    "open::allure-report":"allure open ./reports/allure-report"
+    "generate::allure-report": "allure generate allure-results -o allure-report --clean",
+    "open::allure-report":"allure open allure-report"
   },
   "keywords": [],
   "author": "",

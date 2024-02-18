@@ -35,9 +35,7 @@
       ],
       [
         "D:\\playwrightjse2eautomation\\node_modules\\allure-playwright\\dist\\index.js",
-        {
-          "outputFolder": "./reports/allure-results"
-        }
+        null
       ]
     ],
     "reportSlowTests": {
@@ -49,7 +47,7 @@
       {
         "outputDir": "D:/playwrightjse2eautomation/test-results",
         "repeatEach": 1,
-        "retries": 2,
+        "retries": 3,
         "id": "chromium",
         "name": "chromium",
         "testDir": "D:/playwrightjse2eautomation/tests",
@@ -62,7 +60,7 @@
       {
         "outputDir": "D:/playwrightjse2eautomation/test-results",
         "repeatEach": 1,
-        "retries": 2,
+        "retries": 3,
         "id": "firefox",
         "name": "firefox",
         "testDir": "D:/playwrightjse2eautomation/tests",
@@ -75,7 +73,7 @@
       {
         "outputDir": "D:/playwrightjse2eautomation/test-results",
         "repeatEach": 1,
-        "retries": 2,
+        "retries": 3,
         "id": "webkit",
         "name": "webkit",
         "testDir": "D:/playwrightjse2eautomation/tests",
@@ -93,6 +91,1058 @@
     "webServer": null
   },
   "suites": [
+    {
+      "title": "APITests.spec.js",
+      "file": "APITests.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Create Token",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 2104,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{ token: \u001b[32m'cfaf697f0760e83'\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Token : cfaf697f0760e83\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:24.412Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-9fc715d36f473be3ba66",
+          "file": "APITests.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by all IDs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1576,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking All IDs: [\n  { bookingid: \u001b[33m1343\u001b[39m }, { bookingid: \u001b[33m719\u001b[39m },  { bookingid: \u001b[33m618\u001b[39m },\n  { bookingid: \u001b[33m1855\u001b[39m }, { bookingid: \u001b[33m1821\u001b[39m }, { bookingid: \u001b[33m151\u001b[39m },\n  { bookingid: \u001b[33m1443\u001b[39m }, { bookingid: \u001b[33m81\u001b[39m },   { bookingid: \u001b[33m502\u001b[39m },\n  { bookingid: \u001b[33m109\u001b[39m },  { bookingid: \u001b[33m1507\u001b[39m }, { bookingid: \u001b[33m769\u001b[39m },\n  { bookingid: \u001b[33m876\u001b[39m },  { bookingid: \u001b[33m424\u001b[39m },  { bookingid: \u001b[33m936\u001b[39m },\n  { bookingid: \u001b[33m29\u001b[39m },   { bookingid: \u001b[33m440\u001b[39m },  { bookingid: \u001b[33m1174\u001b[39m },\n  { bookingid: \u001b[33m2098\u001b[39m }, { bookingid: \u001b[33m1405\u001b[39m }, { bookingid: \u001b[33m1418\u001b[39m },\n  { bookingid: \u001b[33m131\u001b[39m },  { bookingid: \u001b[33m1394\u001b[39m }, { bookingid: \u001b[33m1626\u001b[39m },\n  { bookingid: \u001b[33m1645\u001b[39m }, { bookingid: \u001b[33m879\u001b[39m },  { bookingid: \u001b[33m764\u001b[39m },\n  { bookingid: \u001b[33m1887\u001b[39m }, { bookingid: \u001b[33m1121\u001b[39m }, { bookingid: \u001b[33m1921\u001b[39m },\n  { bookingid: \u001b[33m1334\u001b[39m }, { bookingid: \u001b[33m1562\u001b[39m }, { bookingid: \u001b[33m242\u001b[39m },\n  { bookingid: \u001b[33m1065\u001b[39m }, { bookingid: \u001b[33m1180\u001b[39m }, { bookingid: \u001b[33m2041\u001b[39m },\n  { bookingid: \u001b[33m920\u001b[39m },  { bookingid: \u001b[33m725\u001b[39m },  { bookingid: \u001b[33m1619\u001b[39m },\n  { bookingid: \u001b[33m1450\u001b[39m }, { bookingid: \u001b[33m1939\u001b[39m }, { bookingid: \u001b[33m1880\u001b[39m },\n  { bookingid: \u001b[33m183\u001b[39m },  { bookingid: \u001b[33m232\u001b[39m },  { bookingid: \u001b[33m2067\u001b[39m },\n  { bookingid: \u001b[33m451\u001b[39m },  { bookingid: \u001b[33m19\u001b[39m },   { bookingid: \u001b[33m619\u001b[39m },\n  { bookingid: \u001b[33m1660\u001b[39m }, { bookingid: \u001b[33m1781\u001b[39m }, { bookingid: \u001b[33m1123\u001b[39m },\n  { bookingid: \u001b[33m117\u001b[39m },  { bookingid: \u001b[33m1402\u001b[39m }, { bookingid: \u001b[33m1142\u001b[39m },\n  { bookingid: \u001b[33m1339\u001b[39m }, { bookingid: \u001b[33m286\u001b[39m },  { bookingid: \u001b[33m782\u001b[39m },\n  { bookingid: \u001b[33m1737\u001b[39m }, { bookingid: \u001b[33m837\u001b[39m },  { bookingid: \u001b[33m1151\u001b[39m },\n  { bookingid: \u001b[33m121\u001b[39m },  { bookingid: \u001b[33m1665\u001b[39m }, { bookingid: \u001b[33m2004\u001b[39m },\n  { bookingid: \u001b[33m1792\u001b[39m }, { bookingid: \u001b[33m1631\u001b[39m }, { bookingid: \u001b[33m13\u001b[39m },\n  { bookingid: \u001b[33m1109\u001b[39m }, { bookingid: \u001b[33m1430\u001b[39m }, { bookingid: \u001b[33m268\u001b[39m },\n  { bookingid: \u001b[33m1424\u001b[39m }, { bookingid: \u001b[33m1896\u001b[39m }, { bookingid: \u001b[33m390\u001b[39m },\n  { bookingid: \u001b[33m1810\u001b[39m }, { bookingid: \u001b[33m1992\u001b[39m }, { bookingid: \u001b[33m309\u001b[39m },\n  { bookingid: \u001b[33m1659\u001b[39m }, { bookingid: \u001b[33m671\u001b[39m },  { bookingid: \u001b[33m40\u001b[39m },\n  { bookingid: \u001b[33m624\u001b[39m },  { bookingid: \u001b[33m1942\u001b[39m }, { bookingid: \u001b[33m259\u001b[39m },\n  { bookingid: \u001b[33m1362\u001b[39m }, { bookingid: \u001b[33m1761\u001b[39m }, { bookingid: \u001b[33m612\u001b[39m },\n  { bookingid: \u001b[33m1965\u001b[39m }, { bookingid: \u001b[33m1593\u001b[39m }, { bookingid: \u001b[33m522\u001b[39m },\n  { bookingid: \u001b[33m568\u001b[39m },  { bookingid: \u001b[33m281\u001b[39m },  { bookingid: \u001b[33m1986\u001b[39m },\n  { bookingid: \u001b[33m1863\u001b[39m }, { bookingid: \u001b[33m885\u001b[39m },  { bookingid: \u001b[33m1069\u001b[39m },\n  { bookingid: \u001b[33m617\u001b[39m },  { bookingid: \u001b[33m1556\u001b[39m }, { bookingid: \u001b[33m1128\u001b[39m },\n  { bookingid: \u001b[33m1244\u001b[39m }, { bookingid: \u001b[33m265\u001b[39m },  { bookingid: \u001b[33m454\u001b[39m },\n  { bookingid: \u001b[33m663\u001b[39m },\n  ... 1347 more items\n]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:26.527Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-c3e43b0e1992025da7ba",
+          "file": "APITests.spec.js",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by filter name",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1294,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by name []\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:28.108Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-1091d546ae7fc6c0259d",
+          "file": "APITests.spec.js",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by checkin checkout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1258,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by checkin/checkout []\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:29.406Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-64a1b27f3f1b3eb8dfae",
+          "file": "APITests.spec.js",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "Create Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1282,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Create booking {\n  bookingid: \u001b[33m2145\u001b[39m,\n  booking: {\n    firstname: \u001b[32m'MD Niyaz'\u001b[39m,\n    lastname: \u001b[32m'Hashmi'\u001b[39m,\n    totalprice: \u001b[33m8279\u001b[39m,\n    depositpaid: \u001b[33mtrue\u001b[39m,\n    bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n    additionalneeds: \u001b[32m'Lunch'\u001b[39m\n  }\n}\n"
+                    },
+                    {
+                      "text": "Booking Id:  \u001b[33m2145\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:30.667Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-b70aa290aaf916f484f8",
+          "file": "APITests.spec.js",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "getBooking by ID",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1209,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by ID {\n  firstname: \u001b[32m'MD Niyaz'\u001b[39m,\n  lastname: \u001b[32m'Hashmi'\u001b[39m,\n  totalprice: \u001b[33m8279\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n  additionalneeds: \u001b[32m'Lunch'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:31.952Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-3c28e1aedf368f1f13bf",
+          "file": "APITests.spec.js",
+          "line": 98,
+          "column": 1
+        },
+        {
+          "title": "Update Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1271,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  cfaf697f0760e83\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m2145\u001b[39m\n"
+                    },
+                    {
+                      "text": "Update Booking {\n  firstname: \u001b[32m'MD Niyaz update'\u001b[39m,\n  lastname: \u001b[32m'Hashmi update'\u001b[39m,\n  totalprice: \u001b[33m479\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n  additionalneeds: \u001b[32m'Lunch'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:33.167Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-b6fb6318255cf7eb26d3",
+          "file": "APITests.spec.js",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "Partial Update Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1278,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  cfaf697f0760e83\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m2145\u001b[39m\n"
+                    },
+                    {
+                      "text": "Partial Update Booking {\n  firstname: \u001b[32m'MD Niyaz update'\u001b[39m,\n  lastname: \u001b[32m'Hashmi update'\u001b[39m,\n  totalprice: \u001b[33m479\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'0NaN-aN-aN'\u001b[39m, checkout: \u001b[32m'2024-12-30'\u001b[39m },\n  additionalneeds: \u001b[32m'Dinner'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:34.441Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-ddec08cbafb40246c99a",
+          "file": "APITests.spec.js",
+          "line": 140,
+          "column": 1
+        },
+        {
+          "title": "Delete Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1407,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  cfaf697f0760e83\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m2145\u001b[39m\n"
+                    },
+                    {
+                      "text": "Delete Booking \u001b[33m403\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:35.721Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-a907327981c104f74ef5",
+          "file": "APITests.spec.js",
+          "line": 164,
+          "column": 1
+        },
+        {
+          "title": "Create Token",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1900,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{ token: \u001b[32m'5872b16f00d998e'\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Token : 5872b16f00d998e\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:38.676Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-846d834867555ef1c646",
+          "file": "APITests.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by all IDs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1680,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking All IDs: [\n  { bookingid: \u001b[33m1343\u001b[39m }, { bookingid: \u001b[33m719\u001b[39m },  { bookingid: \u001b[33m618\u001b[39m },\n  { bookingid: \u001b[33m1855\u001b[39m }, { bookingid: \u001b[33m1821\u001b[39m }, { bookingid: \u001b[33m151\u001b[39m },\n  { bookingid: \u001b[33m1443\u001b[39m }, { bookingid: \u001b[33m81\u001b[39m },   { bookingid: \u001b[33m502\u001b[39m },\n  { bookingid: \u001b[33m2171\u001b[39m }, { bookingid: \u001b[33m109\u001b[39m },  { bookingid: \u001b[33m1507\u001b[39m },\n  { bookingid: \u001b[33m769\u001b[39m },  { bookingid: \u001b[33m876\u001b[39m },  { bookingid: \u001b[33m424\u001b[39m },\n  { bookingid: \u001b[33m936\u001b[39m },  { bookingid: \u001b[33m29\u001b[39m },   { bookingid: \u001b[33m440\u001b[39m },\n  { bookingid: \u001b[33m1174\u001b[39m }, { bookingid: \u001b[33m2098\u001b[39m }, { bookingid: \u001b[33m1405\u001b[39m },\n  { bookingid: \u001b[33m1418\u001b[39m }, { bookingid: \u001b[33m131\u001b[39m },  { bookingid: \u001b[33m1394\u001b[39m },\n  { bookingid: \u001b[33m1626\u001b[39m }, { bookingid: \u001b[33m1645\u001b[39m }, { bookingid: \u001b[33m2191\u001b[39m },\n  { bookingid: \u001b[33m879\u001b[39m },  { bookingid: \u001b[33m764\u001b[39m },  { bookingid: \u001b[33m1887\u001b[39m },\n  { bookingid: \u001b[33m2142\u001b[39m }, { bookingid: \u001b[33m1121\u001b[39m }, { bookingid: \u001b[33m1921\u001b[39m },\n  { bookingid: \u001b[33m1334\u001b[39m }, { bookingid: \u001b[33m1562\u001b[39m }, { bookingid: \u001b[33m242\u001b[39m },\n  { bookingid: \u001b[33m1065\u001b[39m }, { bookingid: \u001b[33m1180\u001b[39m }, { bookingid: \u001b[33m2041\u001b[39m },\n  { bookingid: \u001b[33m920\u001b[39m },  { bookingid: \u001b[33m725\u001b[39m },  { bookingid: \u001b[33m1619\u001b[39m },\n  { bookingid: \u001b[33m1450\u001b[39m }, { bookingid: \u001b[33m1939\u001b[39m }, { bookingid: \u001b[33m1880\u001b[39m },\n  { bookingid: \u001b[33m183\u001b[39m },  { bookingid: \u001b[33m232\u001b[39m },  { bookingid: \u001b[33m2067\u001b[39m },\n  { bookingid: \u001b[33m451\u001b[39m },  { bookingid: \u001b[33m19\u001b[39m },   { bookingid: \u001b[33m619\u001b[39m },\n  { bookingid: \u001b[33m1660\u001b[39m }, { bookingid: \u001b[33m1781\u001b[39m }, { bookingid: \u001b[33m1123\u001b[39m },\n  { bookingid: \u001b[33m117\u001b[39m },  { bookingid: \u001b[33m1402\u001b[39m }, { bookingid: \u001b[33m1142\u001b[39m },\n  { bookingid: \u001b[33m1339\u001b[39m }, { bookingid: \u001b[33m286\u001b[39m },  { bookingid: \u001b[33m2222\u001b[39m },\n  { bookingid: \u001b[33m782\u001b[39m },  { bookingid: \u001b[33m1737\u001b[39m }, { bookingid: \u001b[33m837\u001b[39m },\n  { bookingid: \u001b[33m1151\u001b[39m }, { bookingid: \u001b[33m121\u001b[39m },  { bookingid: \u001b[33m1665\u001b[39m },\n  { bookingid: \u001b[33m2004\u001b[39m }, { bookingid: \u001b[33m1792\u001b[39m }, { bookingid: \u001b[33m1631\u001b[39m },\n  { bookingid: \u001b[33m13\u001b[39m },   { bookingid: \u001b[33m1109\u001b[39m }, { bookingid: \u001b[33m1430\u001b[39m },\n  { bookingid: \u001b[33m268\u001b[39m },  { bookingid: \u001b[33m1424\u001b[39m }, { bookingid: \u001b[33m1896\u001b[39m },\n  { bookingid: \u001b[33m390\u001b[39m },  { bookingid: \u001b[33m1810\u001b[39m }, { bookingid: \u001b[33m1992\u001b[39m },\n  { bookingid: \u001b[33m309\u001b[39m },  { bookingid: \u001b[33m1659\u001b[39m }, { bookingid: \u001b[33m671\u001b[39m },\n  { bookingid: \u001b[33m40\u001b[39m },   { bookingid: \u001b[33m624\u001b[39m },  { bookingid: \u001b[33m1942\u001b[39m },\n  { bookingid: \u001b[33m259\u001b[39m },  { bookingid: \u001b[33m2186\u001b[39m }, { bookingid: \u001b[33m1362\u001b[39m },\n  { bookingid: \u001b[33m2132\u001b[39m }, { bookingid: \u001b[33m1761\u001b[39m }, { bookingid: \u001b[33m612\u001b[39m },\n  { bookingid: \u001b[33m1965\u001b[39m }, { bookingid: \u001b[33m1593\u001b[39m }, { bookingid: \u001b[33m522\u001b[39m },\n  { bookingid: \u001b[33m568\u001b[39m },  { bookingid: \u001b[33m2173\u001b[39m }, { bookingid: \u001b[33m281\u001b[39m },\n  { bookingid: \u001b[33m1986\u001b[39m }, { bookingid: \u001b[33m1863\u001b[39m }, { bookingid: \u001b[33m885\u001b[39m },\n  { bookingid: \u001b[33m1069\u001b[39m },\n  ... 1429 more items\n]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:40.585Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-07dbdb086230add88021",
+          "file": "APITests.spec.js",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by filter name",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1227,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by name []\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:42.269Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-4a142a8ca1af6d72043d",
+          "file": "APITests.spec.js",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by checkin checkout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1294,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by checkin/checkout []\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:43.500Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-0fdaa5a89c8b8cd00b3e",
+          "file": "APITests.spec.js",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "Create Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1220,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Create booking {\n  bookingid: \u001b[33m2260\u001b[39m,\n  booking: {\n    firstname: \u001b[32m'MD Niyaz'\u001b[39m,\n    lastname: \u001b[32m'Hashmi'\u001b[39m,\n    totalprice: \u001b[33m8279\u001b[39m,\n    depositpaid: \u001b[33mtrue\u001b[39m,\n    bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n    additionalneeds: \u001b[32m'Lunch'\u001b[39m\n  }\n}\n"
+                    },
+                    {
+                      "text": "Booking Id:  \u001b[33m2260\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:44.797Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-3d32de4f7ce018d7bb09",
+          "file": "APITests.spec.js",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "getBooking by ID",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1282,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by ID {\n  firstname: \u001b[32m'MD Niyaz'\u001b[39m,\n  lastname: \u001b[32m'Hashmi'\u001b[39m,\n  totalprice: \u001b[33m8279\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n  additionalneeds: \u001b[32m'Lunch'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:46.021Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-b3116576aecf7154d4a6",
+          "file": "APITests.spec.js",
+          "line": 98,
+          "column": 1
+        },
+        {
+          "title": "Update Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1526,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  5872b16f00d998e\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m2260\u001b[39m\n"
+                    },
+                    {
+                      "text": "Update Booking {\n  firstname: \u001b[32m'MD Niyaz update'\u001b[39m,\n  lastname: \u001b[32m'Hashmi update'\u001b[39m,\n  totalprice: \u001b[33m479\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n  additionalneeds: \u001b[32m'Lunch'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:47.307Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-510c369657cabdaa71c2",
+          "file": "APITests.spec.js",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "Partial Update Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1284,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  5872b16f00d998e\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m2260\u001b[39m\n"
+                    },
+                    {
+                      "text": "Partial Update Booking {\n  firstname: \u001b[32m'MD Niyaz update'\u001b[39m,\n  lastname: \u001b[32m'Hashmi update'\u001b[39m,\n  totalprice: \u001b[33m479\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'0NaN-aN-aN'\u001b[39m, checkout: \u001b[32m'2024-12-30'\u001b[39m },\n  additionalneeds: \u001b[32m'Dinner'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:48.836Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-71e4a4e7fd784fca3b6c",
+          "file": "APITests.spec.js",
+          "line": 140,
+          "column": 1
+        },
+        {
+          "title": "Delete Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1336,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  5872b16f00d998e\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m2260\u001b[39m\n"
+                    },
+                    {
+                      "text": "Delete Booking \u001b[33m403\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:50.123Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-305690df8fdb0525b692",
+          "file": "APITests.spec.js",
+          "line": 164,
+          "column": 1
+        },
+        {
+          "title": "Create Token",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1580,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{ token: \u001b[32m'640bae83e6fb006'\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Token : 640bae83e6fb006\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:54.196Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-0e56cef85be27d57d48c",
+          "file": "APITests.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by all IDs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1764,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking All IDs: [\n  { bookingid: \u001b[33m1343\u001b[39m }, { bookingid: \u001b[33m719\u001b[39m },  { bookingid: \u001b[33m618\u001b[39m },\n  { bookingid: \u001b[33m1855\u001b[39m }, { bookingid: \u001b[33m1821\u001b[39m }, { bookingid: \u001b[33m151\u001b[39m },\n  { bookingid: \u001b[33m1443\u001b[39m }, { bookingid: \u001b[33m81\u001b[39m },   { bookingid: \u001b[33m502\u001b[39m },\n  { bookingid: \u001b[33m2171\u001b[39m }, { bookingid: \u001b[33m109\u001b[39m },  { bookingid: \u001b[33m1507\u001b[39m },\n  { bookingid: \u001b[33m769\u001b[39m },  { bookingid: \u001b[33m876\u001b[39m },  { bookingid: \u001b[33m424\u001b[39m },\n  { bookingid: \u001b[33m936\u001b[39m },  { bookingid: \u001b[33m29\u001b[39m },   { bookingid: \u001b[33m2322\u001b[39m },\n  { bookingid: \u001b[33m440\u001b[39m },  { bookingid: \u001b[33m1174\u001b[39m }, { bookingid: \u001b[33m2098\u001b[39m },\n  { bookingid: \u001b[33m1405\u001b[39m }, { bookingid: \u001b[33m1418\u001b[39m }, { bookingid: \u001b[33m131\u001b[39m },\n  { bookingid: \u001b[33m1394\u001b[39m }, { bookingid: \u001b[33m1626\u001b[39m }, { bookingid: \u001b[33m1645\u001b[39m },\n  { bookingid: \u001b[33m2191\u001b[39m }, { bookingid: \u001b[33m2277\u001b[39m }, { bookingid: \u001b[33m879\u001b[39m },\n  { bookingid: \u001b[33m764\u001b[39m },  { bookingid: \u001b[33m1887\u001b[39m }, { bookingid: \u001b[33m2142\u001b[39m },\n  { bookingid: \u001b[33m1121\u001b[39m }, { bookingid: \u001b[33m1921\u001b[39m }, { bookingid: \u001b[33m1334\u001b[39m },\n  { bookingid: \u001b[33m1562\u001b[39m }, { bookingid: \u001b[33m242\u001b[39m },  { bookingid: \u001b[33m1065\u001b[39m },\n  { bookingid: \u001b[33m1180\u001b[39m }, { bookingid: \u001b[33m2041\u001b[39m }, { bookingid: \u001b[33m920\u001b[39m },\n  { bookingid: \u001b[33m2242\u001b[39m }, { bookingid: \u001b[33m725\u001b[39m },  { bookingid: \u001b[33m1619\u001b[39m },\n  { bookingid: \u001b[33m1450\u001b[39m }, { bookingid: \u001b[33m1939\u001b[39m }, { bookingid: \u001b[33m1880\u001b[39m },\n  { bookingid: \u001b[33m183\u001b[39m },  { bookingid: \u001b[33m232\u001b[39m },  { bookingid: \u001b[33m2067\u001b[39m },\n  { bookingid: \u001b[33m451\u001b[39m },  { bookingid: \u001b[33m19\u001b[39m },   { bookingid: \u001b[33m619\u001b[39m },\n  { bookingid: \u001b[33m1660\u001b[39m }, { bookingid: \u001b[33m1781\u001b[39m }, { bookingid: \u001b[33m1123\u001b[39m },\n  { bookingid: \u001b[33m117\u001b[39m },  { bookingid: \u001b[33m1402\u001b[39m }, { bookingid: \u001b[33m1142\u001b[39m },\n  { bookingid: \u001b[33m1339\u001b[39m }, { bookingid: \u001b[33m286\u001b[39m },  { bookingid: \u001b[33m2222\u001b[39m },\n  { bookingid: \u001b[33m2287\u001b[39m }, { bookingid: \u001b[33m782\u001b[39m },  { bookingid: \u001b[33m1737\u001b[39m },\n  { bookingid: \u001b[33m837\u001b[39m },  { bookingid: \u001b[33m1151\u001b[39m }, { bookingid: \u001b[33m121\u001b[39m },\n  { bookingid: \u001b[33m1665\u001b[39m }, { bookingid: \u001b[33m2004\u001b[39m }, { bookingid: \u001b[33m1792\u001b[39m },\n  { bookingid: \u001b[33m1631\u001b[39m }, { bookingid: \u001b[33m13\u001b[39m },   { bookingid: \u001b[33m1109\u001b[39m },\n  { bookingid: \u001b[33m1430\u001b[39m }, { bookingid: \u001b[33m268\u001b[39m },  { bookingid: \u001b[33m1424\u001b[39m },\n  { bookingid: \u001b[33m1896\u001b[39m }, { bookingid: \u001b[33m390\u001b[39m },  { bookingid: \u001b[33m1810\u001b[39m },\n  { bookingid: \u001b[33m1992\u001b[39m }, { bookingid: \u001b[33m309\u001b[39m },  { bookingid: \u001b[33m1659\u001b[39m },\n  { bookingid: \u001b[33m671\u001b[39m },  { bookingid: \u001b[33m40\u001b[39m },   { bookingid: \u001b[33m624\u001b[39m },\n  { bookingid: \u001b[33m1942\u001b[39m }, { bookingid: \u001b[33m259\u001b[39m },  { bookingid: \u001b[33m2186\u001b[39m },\n  { bookingid: \u001b[33m1362\u001b[39m }, { bookingid: \u001b[33m2132\u001b[39m }, { bookingid: \u001b[33m1761\u001b[39m },\n  { bookingid: \u001b[33m612\u001b[39m },  { bookingid: \u001b[33m1965\u001b[39m }, { bookingid: \u001b[33m1593\u001b[39m },\n  { bookingid: \u001b[33m522\u001b[39m },  { bookingid: \u001b[33m568\u001b[39m },  { bookingid: \u001b[33m2173\u001b[39m },\n  { bookingid: \u001b[33m281\u001b[39m },\n  ... 1521 more items\n]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:55.796Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-16b4205b2c3e52215aeb",
+          "file": "APITests.spec.js",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by filter name",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1453,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by name []\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:57.565Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-fd3f40c93ec09124eaf3",
+          "file": "APITests.spec.js",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by checkin checkout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1510,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by checkin/checkout []\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:24:59.021Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-24077dabc95e0e0966c5",
+          "file": "APITests.spec.js",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "Create Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1301,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Create booking {\n  bookingid: \u001b[33m2397\u001b[39m,\n  booking: {\n    firstname: \u001b[32m'MD Niyaz'\u001b[39m,\n    lastname: \u001b[32m'Hashmi'\u001b[39m,\n    totalprice: \u001b[33m8279\u001b[39m,\n    depositpaid: \u001b[33mtrue\u001b[39m,\n    bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n    additionalneeds: \u001b[32m'Lunch'\u001b[39m\n  }\n}\n"
+                    },
+                    {
+                      "text": "Booking Id:  \u001b[33m2397\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:25:00.534Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-7f369f1ffbfe1455e740",
+          "file": "APITests.spec.js",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "getBooking by ID",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1225,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by ID {\n  firstname: \u001b[32m'MD Niyaz'\u001b[39m,\n  lastname: \u001b[32m'Hashmi'\u001b[39m,\n  totalprice: \u001b[33m8279\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n  additionalneeds: \u001b[32m'Lunch'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:25:01.843Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-99f6a55efc0135681dd8",
+          "file": "APITests.spec.js",
+          "line": 98,
+          "column": 1
+        },
+        {
+          "title": "Update Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1322,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  640bae83e6fb006\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m2397\u001b[39m\n"
+                    },
+                    {
+                      "text": "Update Booking {\n  firstname: \u001b[32m'MD Niyaz update'\u001b[39m,\n  lastname: \u001b[32m'Hashmi update'\u001b[39m,\n  totalprice: \u001b[33m479\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n  additionalneeds: \u001b[32m'Lunch'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:25:03.071Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-66e6ad11b032502bc908",
+          "file": "APITests.spec.js",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "Partial Update Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1466,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  640bae83e6fb006\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m2397\u001b[39m\n"
+                    },
+                    {
+                      "text": "Partial Update Booking {\n  firstname: \u001b[32m'MD Niyaz update'\u001b[39m,\n  lastname: \u001b[32m'Hashmi update'\u001b[39m,\n  totalprice: \u001b[33m479\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'0NaN-aN-aN'\u001b[39m, checkout: \u001b[32m'2024-12-30'\u001b[39m },\n  additionalneeds: \u001b[32m'Dinner'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:25:04.404Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-abe50c3124f74c031c92",
+          "file": "APITests.spec.js",
+          "line": 140,
+          "column": 1
+        },
+        {
+          "title": "Delete Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1234,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  640bae83e6fb006\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m2397\u001b[39m\n"
+                    },
+                    {
+                      "text": "Delete Booking \u001b[33m403\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-18T08:25:05.873Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-1cfca9016f2dc602f395",
+          "file": "APITests.spec.js",
+          "line": 164,
+          "column": 1
+        }
+      ]
+    },
     {
       "title": "e2e.spec.js",
       "file": "e2e.spec.js",
@@ -112,14 +1162,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "status": "passed",
-                  "duration": 7142,
+                  "duration": 3304,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:13:35.159Z",
+                  "startTime": "2024-02-18T08:24:24.416Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -134,7 +1184,7 @@
           ],
           "id": "616cc0f313d283bb66d2-cc7550182acbd726fa10",
           "file": "e2e.spec.js",
-          "line": 26,
+          "line": 27,
           "column": 1
         },
         {
@@ -152,12 +1202,12 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 7351,
+                  "duration": 2539,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:13:35.170Z",
+                  "startTime": "2024-02-18T08:24:29.211Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -172,12 +1222,12 @@
           ],
           "id": "616cc0f313d283bb66d2-15fab78d55c95b66d483",
           "file": "e2e.spec.js",
-          "line": 34,
+          "line": 35,
           "column": 1
         },
         {
           "title": "Add the product into the cart and assert if it is added or not",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -188,155 +1238,29 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 3694,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
-                    "location": {
-                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                      "column": 76,
-                      "line": 46
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                        "column": 76,
-                        "line": 46
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
-                    }
-                  ],
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 2726,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:13:45.836Z",
+                  "startTime": "2024-02-18T08:24:31.755Z",
                   "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\\test-failed-1.png"
-                    },
                     {
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\\video.webm"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                    "column": 76,
-                    "line": 46
-                  }
-                },
-                {
-                  "workerIndex": 2,
-                  "status": "failed",
-                  "duration": 4487,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
-                    "location": {
-                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                      "column": 76,
-                      "line": 46
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                        "column": 76,
-                        "line": 46
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2024-02-17T16:13:51.532Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry1\\trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                    "column": 76,
-                    "line": 46
-                  }
-                },
-                {
-                  "workerIndex": 4,
-                  "status": "failed",
-                  "duration": 4217,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
-                    "location": {
-                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                      "column": 76,
-                      "line": 46
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                        "column": 76,
-                        "line": 46
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 2,
-                  "startTime": "2024-02-17T16:13:59.929Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry2\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium-retry2\\video.webm"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                    "column": 76,
-                    "line": 46
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "616cc0f313d283bb66d2-da8aef64c1285f59849f",
           "file": "e2e.spec.js",
-          "line": 41,
+          "line": 42,
           "column": 1
         },
         {
@@ -354,12 +1278,12 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 4162,
+                  "duration": 2791,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:13:46.075Z",
+                  "startTime": "2024-02-18T08:24:34.485Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -374,7 +1298,7 @@
           ],
           "id": "616cc0f313d283bb66d2-b8b5a55eb513c25a4c93",
           "file": "e2e.spec.js",
-          "line": 50,
+          "line": 51,
           "column": 1
         },
         {
@@ -392,12 +1316,12 @@
                 {
                   "workerIndex": 1,
                   "status": "passed",
-                  "duration": 5557,
+                  "duration": 4197,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:13:50.246Z",
+                  "startTime": "2024-02-18T08:24:37.279Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -412,7 +1336,7 @@
           ],
           "id": "616cc0f313d283bb66d2-7fe2ceb1ecc8eb6e4ab3",
           "file": "e2e.spec.js",
-          "line": 71,
+          "line": 72,
           "column": 1
         },
         {
@@ -430,12 +1354,12 @@
                 {
                   "workerIndex": 3,
                   "status": "passed",
-                  "duration": 7772,
+                  "duration": 6305,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:13:58.227Z",
+                  "startTime": "2024-02-18T08:24:42.666Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -450,7 +1374,7 @@
           ],
           "id": "616cc0f313d283bb66d2-70fadd6d2ac7245c7943",
           "file": "e2e.spec.js",
-          "line": 26,
+          "line": 27,
           "column": 1
         },
         {
@@ -466,14 +1390,14 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 5,
+                  "workerIndex": 3,
                   "status": "passed",
-                  "duration": 7947,
+                  "duration": 3290,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:14:09.436Z",
+                  "startTime": "2024-02-18T08:24:50.875Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -488,12 +1412,12 @@
           ],
           "id": "616cc0f313d283bb66d2-d0c7e03b4f405f72a4ab",
           "file": "e2e.spec.js",
-          "line": 34,
+          "line": 35,
           "column": 1
         },
         {
           "title": "Add the product into the cart and assert if it is added or not",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -505,154 +1429,28 @@
               "results": [
                 {
                   "workerIndex": 3,
-                  "status": "failed",
-                  "duration": 4727,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
-                    "location": {
-                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                      "column": 76,
-                      "line": 46
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                        "column": 76,
-                        "line": 46
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 3946,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:14:09.622Z",
+                  "startTime": "2024-02-18T08:24:54.169Z",
                   "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\\test-failed-1.png"
-                    },
                     {
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\\video.webm"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                    "column": 76,
-                    "line": 46
-                  }
-                },
-                {
-                  "workerIndex": 6,
-                  "status": "failed",
-                  "duration": 11589,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
-                    "location": {
-                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                      "column": 76,
-                      "line": 46
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                        "column": 76,
-                        "line": 46
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2024-02-17T16:14:21.706Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry1\\trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                    "column": 76,
-                    "line": 46
-                  }
-                },
-                {
-                  "workerIndex": 8,
-                  "status": "failed",
-                  "duration": 9436,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
-                    "location": {
-                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                      "column": 76,
-                      "line": 46
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                        "column": 76,
-                        "line": 46
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 2,
-                  "startTime": "2024-02-17T16:14:45.565Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry2\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox-retry2\\video.webm"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                    "column": 76,
-                    "line": 46
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "616cc0f313d283bb66d2-f7413951bc53c0f856cd",
           "file": "e2e.spec.js",
-          "line": 41,
+          "line": 42,
           "column": 1
         },
         {
@@ -668,14 +1466,14 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 5,
+                  "workerIndex": 3,
                   "status": "passed",
-                  "duration": 4645,
+                  "duration": 3718,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:14:20.803Z",
+                  "startTime": "2024-02-18T08:24:58.119Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -690,7 +1488,7 @@
           ],
           "id": "616cc0f313d283bb66d2-96bcfbd5b3ac85ae4a55",
           "file": "e2e.spec.js",
-          "line": 50,
+          "line": 51,
           "column": 1
         },
         {
@@ -706,14 +1504,14 @@
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 5,
+                  "workerIndex": 3,
                   "status": "passed",
-                  "duration": 7538,
+                  "duration": 5073,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:14:25.456Z",
+                  "startTime": "2024-02-18T08:25:01.841Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -728,7 +1526,7 @@
           ],
           "id": "616cc0f313d283bb66d2-284e727591148296514d",
           "file": "e2e.spec.js",
-          "line": 71,
+          "line": 72,
           "column": 1
         },
         {
@@ -744,14 +1542,14 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 7,
+                  "workerIndex": 5,
                   "status": "passed",
-                  "duration": 11897,
+                  "duration": 4248,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:14:40.349Z",
+                  "startTime": "2024-02-18T08:25:09.432Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -766,7 +1564,7 @@
           ],
           "id": "616cc0f313d283bb66d2-7b121564b48f69a960b0",
           "file": "e2e.spec.js",
-          "line": 26,
+          "line": 27,
           "column": 1
         },
         {
@@ -782,14 +1580,14 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 7,
+                  "workerIndex": 5,
                   "status": "passed",
-                  "duration": 6953,
+                  "duration": 3727,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:14:55.253Z",
+                  "startTime": "2024-02-18T08:25:15.372Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -804,12 +1602,12 @@
           ],
           "id": "616cc0f313d283bb66d2-466801a6c904c00c4cc2",
           "file": "e2e.spec.js",
-          "line": 34,
+          "line": 35,
           "column": 1
         },
         {
           "title": "Add the product into the cart and assert if it is added or not",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -820,155 +1618,29 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 9,
-                  "status": "failed",
-                  "duration": 8732,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
-                    "location": {
-                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                      "column": 76,
-                      "line": 46
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                        "column": 76,
-                        "line": 46
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
-                    }
-                  ],
+                  "workerIndex": 5,
+                  "status": "passed",
+                  "duration": 4844,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:15:02.064Z",
+                  "startTime": "2024-02-18T08:25:19.102Z",
                   "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\\test-failed-1.png"
-                    },
                     {
                       "name": "video",
                       "contentType": "video/webm",
                       "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\\video.webm"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                    "column": 76,
-                    "line": 46
-                  }
-                },
-                {
-                  "workerIndex": 10,
-                  "status": "failed",
-                  "duration": 13465,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
-                    "location": {
-                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                      "column": 76,
-                      "line": 46
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                        "column": 76,
-                        "line": 46
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2024-02-17T16:15:14.977Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry1\\trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                    "column": 76,
-                    "line": 46
-                  }
-                },
-                {
-                  "workerIndex": 11,
-                  "status": "failed",
-                  "duration": 7031,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76",
-                    "location": {
-                      "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                      "column": 76,
-                      "line": 46
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                        "column": 76,
-                        "line": 46
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39maddProductToCart(testData\u001b[33m.\u001b[39maddProductCart\u001b[33m,\u001b[39m\u001b[32m'#add-to-cart-sauce-labs-bike-light'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 45 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#remove-sauce-labs-bike-light'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.shopping_cart_link > span'\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m.\u001b[39mtoBe(\u001b[32m'2'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m     \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclick(\u001b[32m\"//button[text()='Remove']\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m })\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\e2e.spec.js:46:76\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 2,
-                  "startTime": "2024-02-17T16:15:32.216Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry2\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit-retry2\\video.webm"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\playwrightjse2eautomation\\tests\\e2e.spec.js",
-                    "column": 76,
-                    "line": 46
-                  }
+                  ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "616cc0f313d283bb66d2-fccd7883aaf379b378d1",
           "file": "e2e.spec.js",
-          "line": 41,
+          "line": 42,
           "column": 1
         },
         {
@@ -984,14 +1656,14 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 7,
+                  "workerIndex": 5,
                   "status": "passed",
-                  "duration": 10472,
+                  "duration": 4998,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:15:02.214Z",
+                  "startTime": "2024-02-18T08:25:23.950Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -1006,7 +1678,7 @@
           ],
           "id": "616cc0f313d283bb66d2-ead56960abf7964fc345",
           "file": "e2e.spec.js",
-          "line": 50,
+          "line": 51,
           "column": 1
         },
         {
@@ -1022,14 +1694,14 @@
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 7,
+                  "workerIndex": 5,
                   "status": "passed",
-                  "duration": 16608,
+                  "duration": 9272,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-17T16:15:12.695Z",
+                  "startTime": "2024-02-18T08:25:28.951Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -1044,7 +1716,7 @@
           ],
           "id": "616cc0f313d283bb66d2-0b72ddec2bd60858e7a2",
           "file": "e2e.spec.js",
-          "line": 71,
+          "line": 72,
           "column": 1
         }
       ]
@@ -1052,11 +1724,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-02-17T16:13:33.589Z",
-    "duration": 127943.364,
-    "expected": 12,
+    "startTime": "2024-02-18T08:24:22.716Z",
+    "duration": 75613.413,
+    "expected": 42,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 0,
     "flaky": 0
   }
 }

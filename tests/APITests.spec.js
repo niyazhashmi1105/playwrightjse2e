@@ -3,6 +3,7 @@ const {test, expect} = require('@playwright/test')
 var token
 var bookingId
 //const baseURL = 'https://restful-booker.herokuapp.com'
+test.describe.configure({ mode: 'serial' });
 
 
 test('Create Token', async({request})=>{
