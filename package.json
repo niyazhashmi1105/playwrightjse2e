@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test::headless": "npx playwright test",
+    "test::all": "npx playwright test",
     "test::web": "npx playwright test e2e.spec.js",
     "test::api": "npx playwright test APITests.spec.js --workers=1",
     "test::ui": "npx playwright test --ui",
