@@ -1,0 +1,12 @@
+Create booking {
+  bookingid: 186,
+  booking: {
+    firstname: 'MD Niyaz',
+    lastname: 'Hashmi',
+    totalprice: 8279,
+    depositpaid: true,
+    bookingdates: { checkin: '2024-01-12', checkout: '2024-12-31' },
+    additionalneeds: 'Lunch'
+  }
+}
+Booking Id:  186
