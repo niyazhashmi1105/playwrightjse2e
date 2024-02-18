@@ -1,3 +1,0 @@
-Token:  640bae83e6fb006
-Bookingid:  2397
-Delete Booking 403

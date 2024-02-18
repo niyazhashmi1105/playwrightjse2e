@@ -23,11 +23,11 @@ module.exports = defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['html',{outputFolder:'./reports/index.html'}],
-    ['junit',{outputFile: './reports/results.xml'}],
-    ['json',{outputFile: './reports/results.json'}],
+    ['junit',{outputFolder: './reports/results.xml'}],
+    ['json',{outputFolder: './reports/results.json'}],
     ['allure-playwright']
   ],
-  retries: 3,
+  retries: 1,
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */

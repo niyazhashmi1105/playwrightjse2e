@@ -1,7 +1,7 @@
 export class BasePage{
 
     constructor(page){
-        this.page = 
+        this.page = page
         this.selectOptions = ".product_sort_container option"
         this.filterOptions = ".product_sort_container"
     }

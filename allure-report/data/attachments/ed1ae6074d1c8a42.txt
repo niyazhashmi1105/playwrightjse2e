@@ -1,3 +1,0 @@
-Token:  cfaf697f0760e83
-Bookingid:  2145
-Delete Booking 403

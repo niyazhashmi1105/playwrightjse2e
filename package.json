@@ -12,7 +12,7 @@
     "test::chrome": "npx playwright test --headed project chromium e2e.spec.js",
     "html::report": "npx playwright show-report",
     "generate::allure-report": "allure generate allure-results -o allure-report --clean",
-    "open::allure-report":"allure open allure-report"
+    "open::allure-report": "allure open allure-report"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +21,8 @@
     "@playwright/test": "^1.41.2",
     "@types/node": "^20.10.6",
     "allure-playwright": "^2.12.2"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
   }
 }
