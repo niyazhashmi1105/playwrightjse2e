@@ -1,4 +1,4 @@
-name: Playwright Tests with Github OIDC Connect Integration with AWS
+name: Playwright Allure Report with Github OIDC Connect integrated with AWS s3 bucket
 "on":
   push:
     branches:
@@ -26,11 +26,13 @@ jobs:
 
       - name: Run Playwright tests
         run: npm run test::all
+      - name: Generate Allure Report
+        run: npm run generate::allure-report
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: playwright-report
-          path: reports/
+          name: allure-report
+          path: allure-report
           retention-days: 1
 
       - name: Configure AWS Credentials
@@ -44,10 +46,10 @@ jobs:
         id: S3
         if: always()
         env:
-          REPORT_DIR: playwright-report-${{ github.run_id }}
+          REPORT_DIR: playwright-allure-report-${{ github.run_id }}
         run: |
             echo "REPORT_DIR=$REPORT_DIR" >> $GITHUB_ENV
-            aws s3 cp playwright-report/. s3://${{ vars.AWS_S3_BUCKET }}/$REPORT_DIR --recursive
+            aws s3 cp playwright-allure-report/. s3://${{ vars.AWS_S3_BUCKET }}/$REPORT_DIR --recursive
 
       - name: Create URL file
         if: always()
