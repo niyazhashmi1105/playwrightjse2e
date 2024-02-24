@@ -1,0 +1,10 @@
+Token:  284dc655cfa0906
+Bookingid:  7520
+Partial Update Booking {
+  firstname: 'MD Niyaz update',
+  lastname: 'Hashmi update',
+  totalprice: 479,
+  depositpaid: true,
+  bookingdates: { checkin: '0NaN-aN-aN', checkout: '2024-12-30' },
+  additionalneeds: 'Dinner'
+}
