@@ -1,0 +1,10 @@
+Token:  936afbc8b750565
+Bookingid:  218
+Update Booking {
+  firstname: 'MD Niyaz update',
+  lastname: 'Hashmi update',
+  totalprice: 479,
+  depositpaid: true,
+  bookingdates: { checkin: '2024-01-12', checkout: '2024-12-31' },
+  additionalneeds: 'Lunch'
+}
