@@ -1,143 +1,165 @@
-<testsuites id="" name="" tests="6" failures="2" skipped="0" errors="0" time="6.375316">
-<testsuite name="excelManipulation.spec.js" timestamp="2024-02-18T16:22:29.114Z" hostname="chromium" tests="2" failures="0" skipped="0" time="0.558" errors="0">
-<testcase name="Read excel file contents" classname="excelManipulation.spec.js" time="0.239">
+<testsuites id="" name="" tests="51" failures="0" skipped="6" errors="0" time="93.31290000000001">
+<testsuite name="APITests.spec.js" timestamp="2024-02-26T05:11:44.060Z" hostname="chromium" tests="9" failures="0" skipped="0" time="13.27" errors="0">
+<testcase name="Create Token" classname="APITests.spec.js" time="2.182">
 <system-out>
-<![CDATA[[
-  {
-    username: [32m'U1'[39m,
-    password: [32m'P1'[39m,
-    firstname: [32m'TestFN1'[39m,
-    lastname: [32m'TestLN1'[39m,
-    address: [32m'Test ADDR1'[39m,
-    postalcode: [33m123456[39m
-  },
-  {
-    username: [32m'U2'[39m,
-    password: [32m'P2'[39m,
-    firstname: [32m'TestFN2'[39m,
-    lastname: [32m'TestLN2'[39m,
-    address: [32m'Test ADDR2'[39m,
-    postalcode: [33m549875[39m
-  },
-  {
-    username: [32m'U3'[39m,
-    password: [32m'P3'[39m,
-    firstname: [32m'TestFN3'[39m,
-    lastname: [32m'TestLN3'[39m,
-    address: [32m'Test ADDR3'[39m,
-    postalcode: [33m473865[39m
-  },
-  {
-    username: [32m'U4'[39m,
-    password: [32m'P4'[39m,
-    firstname: [32m'TestFN4'[39m,
-    lastname: [32m'TestLN4'[39m,
-    address: [32m'Test ADDR4'[39m,
-    postalcode: [33m847533[39m
-  },
-  {
-    username: [32m'U5'[39m,
-    password: [32m'P5'[39m,
-    firstname: [32m'TestFN5'[39m,
-    lastname: [32m'TestLN5'[39m,
-    address: [32m'Test ADDR5'[39m,
-    postalcode: [33m548765[39m
-  }
-]
-U1:P1
-U2:P2
-U3:P3
-[33m3[39m
-U3 present at index 3
+<![CDATA[{ token: [32m'c0724ca2f731d7f'[39m }
+Token : c0724ca2f731d7f
 ]]>
 </system-out>
 </testcase>
-<testcase name="Write excel file contents" classname="excelManipulation.spec.js" time="0.319">
+<testcase name="getBookingIds by all IDs" classname="APITests.spec.js" time="1.248">
 <system-out>
-<![CDATA[[90mundefined[39m
-[90mundefined[39m
+<![CDATA[Get Booking All IDs: [
+  { bookingid: [33m395[39m }, { bookingid: [33m263[39m }, { bookingid: [33m420[39m }, { bookingid: [33m318[39m },
+  { bookingid: [33m39[39m },  { bookingid: [33m25[39m },  { bookingid: [33m205[39m }, { bookingid: [33m421[39m },
+  { bookingid: [33m251[39m }, { bookingid: [33m77[39m },  { bookingid: [33m109[39m }, { bookingid: [33m92[39m },
+  { bookingid: [33m293[39m }, { bookingid: [33m89[39m },  { bookingid: [33m302[39m }, { bookingid: [33m363[39m },
+  { bookingid: [33m113[39m }, { bookingid: [33m324[39m }, { bookingid: [33m59[39m },  { bookingid: [33m174[39m },
+  { bookingid: [33m9[39m },   { bookingid: [33m8[39m },   { bookingid: [33m172[39m }, { bookingid: [33m149[39m },
+  { bookingid: [33m367[39m }, { bookingid: [33m397[39m }, { bookingid: [33m278[39m }, { bookingid: [33m197[39m },
+  { bookingid: [33m152[39m }, { bookingid: [33m163[39m }, { bookingid: [33m241[39m }, { bookingid: [33m371[39m },
+  { bookingid: [33m312[39m }, { bookingid: [33m350[39m }, { bookingid: [33m4[39m },   { bookingid: [33m349[39m },
+  { bookingid: [33m3[39m },   { bookingid: [33m42[39m },  { bookingid: [33m345[39m }, { bookingid: [33m86[39m },
+  { bookingid: [33m267[39m }, { bookingid: [33m164[39m }, { bookingid: [33m332[39m }, { bookingid: [33m43[39m },
+  { bookingid: [33m261[39m }, { bookingid: [33m199[39m }, { bookingid: [33m66[39m },  { bookingid: [33m80[39m },
+  { bookingid: [33m351[39m }, { bookingid: [33m200[39m }, { bookingid: [33m102[39m }, { bookingid: [33m99[39m },
+  { bookingid: [33m101[39m }, { bookingid: [33m145[39m }, { bookingid: [33m13[39m },  { bookingid: [33m404[39m },
+  { bookingid: [33m358[39m }, { bookingid: [33m252[39m }, { bookingid: [33m414[39m }, { bookingid: [33m188[39m },
+  { bookingid: [33m35[39m },  { bookingid: [33m122[39m }, { bookingid: [33m49[39m },  { bookingid: [33m71[39m },
+  { bookingid: [33m390[39m }, { bookingid: [33m327[39m }, { bookingid: [33m330[39m }, { bookingid: [33m244[39m },
+  { bookingid: [33m387[39m }, { bookingid: [33m67[39m },  { bookingid: [33m34[39m },  { bookingid: [33m361[39m },
+  { bookingid: [33m87[39m },  { bookingid: [33m158[39m }, { bookingid: [33m234[39m }, { bookingid: [33m137[39m },
+  { bookingid: [33m185[39m }, { bookingid: [33m125[39m }, { bookingid: [33m389[39m }, { bookingid: [33m282[39m },
+  { bookingid: [33m257[39m }, { bookingid: [33m53[39m },  { bookingid: [33m370[39m }, { bookingid: [33m211[39m },
+  { bookingid: [33m62[39m },  { bookingid: [33m338[39m }, { bookingid: [33m408[39m }, { bookingid: [33m233[39m },
+  { bookingid: [33m334[39m }, { bookingid: [33m37[39m },  { bookingid: [33m247[39m }, { bookingid: [33m289[39m },
+  { bookingid: [33m307[39m }, { bookingid: [33m220[39m }, { bookingid: [33m416[39m }, { bookingid: [33m20[39m },
+  { bookingid: [33m111[39m }, { bookingid: [33m382[39m }, { bookingid: [33m108[39m }, { bookingid: [33m100[39m },
+  ... 206 more items
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by filter name" classname="APITests.spec.js" time="1.403">
+<system-out>
+<![CDATA[Get Booking by name []
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by checkin checkout" classname="APITests.spec.js" time="1.233">
+<system-out>
+<![CDATA[Get Booking by checkin/checkout []
+]]>
+</system-out>
+</testcase>
+<testcase name="Create Booking" classname="APITests.spec.js" time="1.341">
+<system-out>
+<![CDATA[Create booking {
+  bookingid: [33m461[39m,
+  booking: {
+    firstname: [32m'MD Niyaz'[39m,
+    lastname: [32m'Hashmi'[39m,
+    totalprice: [33m8279[39m,
+    depositpaid: [33mtrue[39m,
+    bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+    additionalneeds: [32m'Lunch'[39m
+  }
+}
+Booking Id:  [33m461[39m
+]]>
+</system-out>
+</testcase>
+<testcase name="getBooking by ID" classname="APITests.spec.js" time="1.311">
+<system-out>
+<![CDATA[Get Booking by ID {
+  firstname: [32m'MD Niyaz'[39m,
+  lastname: [32m'Hashmi'[39m,
+  totalprice: [33m8279[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+  additionalneeds: [32m'Lunch'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Update Booking" classname="APITests.spec.js" time="1.253">
+<system-out>
+<![CDATA[Token:  c0724ca2f731d7f
+Bookingid:  [33m461[39m
+Update Booking {
+  firstname: [32m'MD Niyaz update'[39m,
+  lastname: [32m'Hashmi update'[39m,
+  totalprice: [33m479[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+  additionalneeds: [32m'Lunch'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Partial Update Booking" classname="APITests.spec.js" time="1.99">
+<system-out>
+<![CDATA[Token:  c0724ca2f731d7f
+Bookingid:  [33m461[39m
+Partial Update Booking {
+  firstname: [32m'MD Niyaz update'[39m,
+  lastname: [32m'Hashmi update'[39m,
+  totalprice: [33m479[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'0NaN-aN-aN'[39m, checkout: [32m'2024-12-30'[39m },
+  additionalneeds: [32m'Dinner'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Booking" classname="APITests.spec.js" time="1.309">
+<system-out>
+<![CDATA[Token:  c0724ca2f731d7f
+Bookingid:  [33m461[39m
+Delete Booking [33m403[39m
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="excelManipulation.spec.js" timestamp="2024-02-18T16:22:29.114Z" hostname="firefox" tests="2" failures="1" skipped="0" time="0.302" errors="0">
-<testcase name="Read excel file contents" classname="excelManipulation.spec.js" time="0.131">
+<testsuite name="e2e.spec.js" timestamp="2024-02-26T05:11:44.060Z" hostname="chromium" tests="5" failures="0" skipped="0" time="15.875" errors="0">
+<testcase name="count the number of products" classname="e2e.spec.js" time="3.223">
 <system-out>
-<![CDATA[[
-  {
-    username: [32m'U1'[39m,
-    password: [32m'P1'[39m,
-    firstname: [32m'TestFN1'[39m,
-    lastname: [32m'TestLN1'[39m,
-    address: [32m'Test ADDR1'[39m,
-    postalcode: [33m123456[39m
-  },
-  {
-    username: [32m'U2'[39m,
-    password: [32m'P2'[39m,
-    firstname: [32m'TestFN2'[39m,
-    lastname: [32m'TestLN2'[39m,
-    address: [32m'Test ADDR2'[39m,
-    postalcode: [33m549875[39m
-  },
-  {
-    username: [32m'U3'[39m,
-    password: [32m'P3'[39m,
-    firstname: [32m'TestFN3'[39m,
-    lastname: [32m'TestLN3'[39m,
-    address: [32m'Test ADDR3'[39m,
-    postalcode: [33m473865[39m
-  },
-  {
-    username: [32m'U4'[39m,
-    password: [32m'P4'[39m,
-    firstname: [32m'TestFN4'[39m,
-    lastname: [32m'TestLN4'[39m,
-    address: [32m'Test ADDR4'[39m,
-    postalcode: [33m847533[39m
-  },
-  {
-    username: [32m'U5'[39m,
-    password: [32m'P5'[39m,
-    firstname: [32m'TestFN5'[39m,
-    lastname: [32m'TestLN5'[39m,
-    address: [32m'Test ADDR5'[39m,
-    postalcode: [33m548765[39m
-  }
-]
-U1:P1
-U2:P2
-U3:P3
-[33m3[39m
-U3 present at index 3
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-count-the-number-of-products-chromium\video.webm]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Write excel file contents" classname="excelManipulation.spec.js" time="0.171">
-<failure message="excelManipulation.spec.js:26:5 Write excel file contents" type="FAILURE">
-<![CDATA[  [firefox] › excelManipulation.spec.js:26:5 › Write excel file contents ───────────────────────────
-
-    Error: Worksheet with name |Sheet4| already exists!
-
-       at ..\utils\common.js:18
-
-      16 |         //const sheet = workbook.Sheets[workbook.SheetNames[0]];
-      17 |         const jsonToSheet = XLSX.utils.json_to_sheet(dataToWrite);
-    > 18 |         XLSX.utils.book_append_sheet(workbook,jsonToSheet,"Sheet4")
-         |                    ^
-      19 |         const data = XLSX.writeFile(workbook,fileName)
-      20 |         console.log(data)
-      21 |         return data;
-
-        at Object.book_append_sheet (D:\playwrightjse2eautomation\node_modules\xlsx\xlsx.js:24227:45)
-        at CommonUtils.writeExcel (D:\playwrightjse2eautomation\utils\common.js:18:20)
-        at D:\playwrightjse2eautomation\tests\excelManipulation.spec.js:39:39
+<testcase name="check the product available or not" classname="e2e.spec.js" time="2.413">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-check-the-product-available-or-not-chromium\video.webm]]
 ]]>
-</failure>
+</system-out>
+</testcase>
+<testcase name="Add the product into the cart and assert if it is added or not" classname="e2e.spec.js" time="2.82">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Check the first and last product before applying filter and after applying the filter" classname="e2e.spec.js" time="2.794">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-chromium\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Add to products into the cart" classname="e2e.spec.js" time="4.625">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Add-to-products-into-the-cart-chromium\video.webm]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="excelManipulation.spec.js" timestamp="2024-02-18T16:22:29.114Z" hostname="webkit" tests="2" failures="1" skipped="0" time="0.316" errors="0">
-<testcase name="Read excel file contents" classname="excelManipulation.spec.js" time="0.145">
+<testsuite name="excelManipulation.spec.js" timestamp="2024-02-26T05:11:44.060Z" hostname="chromium" tests="2" failures="0" skipped="1" time="0.351" errors="0">
+<testcase name="Read excel file contents" classname="excelManipulation.spec.js" time="0.351">
 <system-out>
 <![CDATA[[
   {
@@ -189,27 +211,485 @@ U3 present at index 3
 ]]>
 </system-out>
 </testcase>
-<testcase name="Write excel file contents" classname="excelManipulation.spec.js" time="0.171">
-<failure message="excelManipulation.spec.js:26:5 Write excel file contents" type="FAILURE">
-<![CDATA[  [webkit] › excelManipulation.spec.js:26:5 › Write excel file contents ────────────────────────────
-
-    Error: Worksheet with name |Sheet4| already exists!
-
-       at ..\utils\common.js:18
-
-      16 |         //const sheet = workbook.Sheets[workbook.SheetNames[0]];
-      17 |         const jsonToSheet = XLSX.utils.json_to_sheet(dataToWrite);
-    > 18 |         XLSX.utils.book_append_sheet(workbook,jsonToSheet,"Sheet4")
-         |                    ^
-      19 |         const data = XLSX.writeFile(workbook,fileName)
-      20 |         console.log(data)
-      21 |         return data;
-
-        at Object.book_append_sheet (D:\playwrightjse2eautomation\node_modules\xlsx\xlsx.js:24227:45)
-        at CommonUtils.writeExcel (D:\playwrightjse2eautomation\utils\common.js:18:20)
-        at D:\playwrightjse2eautomation\tests\excelManipulation.spec.js:39:39
+<testcase name="Write excel file contents" classname="excelManipulation.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="testdbconnection.spec.js" timestamp="2024-02-26T05:11:44.060Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Test MYSQL Database Connection with AWS RDS" classname="testdbconnection.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="APITests.spec.js" timestamp="2024-02-26T05:11:44.060Z" hostname="firefox" tests="9" failures="0" skipped="0" time="12.412" errors="0">
+<testcase name="Create Token" classname="APITests.spec.js" time="1.757">
+<system-out>
+<![CDATA[{ token: [32m'e77eccaffe321ba'[39m }
+Token : e77eccaffe321ba
 ]]>
-</failure>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by all IDs" classname="APITests.spec.js" time="1.334">
+<system-out>
+<![CDATA[Get Booking All IDs: [
+  { bookingid: [33m395[39m }, { bookingid: [33m475[39m }, { bookingid: [33m453[39m }, { bookingid: [33m439[39m },
+  { bookingid: [33m263[39m }, { bookingid: [33m420[39m }, { bookingid: [33m461[39m }, { bookingid: [33m514[39m },
+  { bookingid: [33m318[39m }, { bookingid: [33m502[39m }, { bookingid: [33m39[39m },  { bookingid: [33m25[39m },
+  { bookingid: [33m205[39m }, { bookingid: [33m421[39m }, { bookingid: [33m251[39m }, { bookingid: [33m77[39m },
+  { bookingid: [33m109[39m }, { bookingid: [33m470[39m }, { bookingid: [33m92[39m },  { bookingid: [33m293[39m },
+  { bookingid: [33m89[39m },  { bookingid: [33m302[39m }, { bookingid: [33m363[39m }, { bookingid: [33m566[39m },
+  { bookingid: [33m562[39m }, { bookingid: [33m113[39m }, { bookingid: [33m324[39m }, { bookingid: [33m447[39m },
+  { bookingid: [33m505[39m }, { bookingid: [33m59[39m },  { bookingid: [33m523[39m }, { bookingid: [33m174[39m },
+  { bookingid: [33m551[39m }, { bookingid: [33m474[39m }, { bookingid: [33m511[39m }, { bookingid: [33m9[39m },
+  { bookingid: [33m8[39m },   { bookingid: [33m172[39m }, { bookingid: [33m522[39m }, { bookingid: [33m496[39m },
+  { bookingid: [33m149[39m }, { bookingid: [33m528[39m }, { bookingid: [33m367[39m }, { bookingid: [33m397[39m },
+  { bookingid: [33m278[39m }, { bookingid: [33m197[39m }, { bookingid: [33m458[39m }, { bookingid: [33m152[39m },
+  { bookingid: [33m479[39m }, { bookingid: [33m508[39m }, { bookingid: [33m519[39m }, { bookingid: [33m464[39m },
+  { bookingid: [33m543[39m }, { bookingid: [33m163[39m }, { bookingid: [33m241[39m }, { bookingid: [33m371[39m },
+  { bookingid: [33m312[39m }, { bookingid: [33m440[39m }, { bookingid: [33m350[39m }, { bookingid: [33m4[39m },
+  { bookingid: [33m349[39m }, { bookingid: [33m3[39m },   { bookingid: [33m553[39m }, { bookingid: [33m42[39m },
+  { bookingid: [33m345[39m }, { bookingid: [33m86[39m },  { bookingid: [33m267[39m }, { bookingid: [33m164[39m },
+  { bookingid: [33m332[39m }, { bookingid: [33m43[39m },  { bookingid: [33m261[39m }, { bookingid: [33m199[39m },
+  { bookingid: [33m66[39m },  { bookingid: [33m80[39m },  { bookingid: [33m351[39m }, { bookingid: [33m200[39m },
+  { bookingid: [33m102[39m }, { bookingid: [33m99[39m },  { bookingid: [33m101[39m }, { bookingid: [33m537[39m },
+  { bookingid: [33m145[39m }, { bookingid: [33m13[39m },  { bookingid: [33m404[39m }, { bookingid: [33m358[39m },
+  { bookingid: [33m534[39m }, { bookingid: [33m252[39m }, { bookingid: [33m526[39m }, { bookingid: [33m414[39m },
+  { bookingid: [33m188[39m }, { bookingid: [33m471[39m }, { bookingid: [33m35[39m },  { bookingid: [33m556[39m },
+  { bookingid: [33m122[39m }, { bookingid: [33m49[39m },  { bookingid: [33m71[39m },  { bookingid: [33m390[39m },
+  { bookingid: [33m430[39m }, { bookingid: [33m327[39m }, { bookingid: [33m494[39m }, { bookingid: [33m330[39m },
+  ... 304 more items
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by filter name" classname="APITests.spec.js" time="1.252">
+<system-out>
+<![CDATA[Get Booking by name []
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by checkin checkout" classname="APITests.spec.js" time="1.293">
+<system-out>
+<![CDATA[Get Booking by checkin/checkout []
+]]>
+</system-out>
+</testcase>
+<testcase name="Create Booking" classname="APITests.spec.js" time="1.403">
+<system-out>
+<![CDATA[Create booking {
+  bookingid: [33m598[39m,
+  booking: {
+    firstname: [32m'MD Niyaz'[39m,
+    lastname: [32m'Hashmi'[39m,
+    totalprice: [33m8279[39m,
+    depositpaid: [33mtrue[39m,
+    bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+    additionalneeds: [32m'Lunch'[39m
+  }
+}
+Booking Id:  [33m598[39m
+]]>
+</system-out>
+</testcase>
+<testcase name="getBooking by ID" classname="APITests.spec.js" time="1.277">
+<system-out>
+<![CDATA[Get Booking by ID {
+  firstname: [32m'MD Niyaz'[39m,
+  lastname: [32m'Hashmi'[39m,
+  totalprice: [33m8279[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+  additionalneeds: [32m'Lunch'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Update Booking" classname="APITests.spec.js" time="1.397">
+<system-out>
+<![CDATA[Token:  e77eccaffe321ba
+Bookingid:  [33m598[39m
+Update Booking {
+  firstname: [32m'MD Niyaz update'[39m,
+  lastname: [32m'Hashmi update'[39m,
+  totalprice: [33m479[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+  additionalneeds: [32m'Lunch'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Partial Update Booking" classname="APITests.spec.js" time="1.327">
+<system-out>
+<![CDATA[Token:  e77eccaffe321ba
+Bookingid:  [33m598[39m
+Partial Update Booking {
+  firstname: [32m'MD Niyaz update'[39m,
+  lastname: [32m'Hashmi update'[39m,
+  totalprice: [33m479[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'0NaN-aN-aN'[39m, checkout: [32m'2024-12-30'[39m },
+  additionalneeds: [32m'Dinner'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Booking" classname="APITests.spec.js" time="1.372">
+<system-out>
+<![CDATA[Token:  e77eccaffe321ba
+Bookingid:  [33m598[39m
+Delete Booking [33m403[39m
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e.spec.js" timestamp="2024-02-26T05:11:44.060Z" hostname="firefox" tests="5" failures="0" skipped="0" time="25.559" errors="0">
+<testcase name="count the number of products" classname="e2e.spec.js" time="6.879">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-count-the-number-of-products-firefox\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="check the product available or not" classname="e2e.spec.js" time="3.548">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-check-the-product-available-or-not-firefox\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Add the product into the cart and assert if it is added or not" classname="e2e.spec.js" time="4.019">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Check the first and last product before applying filter and after applying the filter" classname="e2e.spec.js" time="4.637">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-firefox\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Add to products into the cart" classname="e2e.spec.js" time="6.476">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Add-to-products-into-the-cart-firefox\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="excelManipulation.spec.js" timestamp="2024-02-26T05:11:44.060Z" hostname="firefox" tests="2" failures="0" skipped="1" time="0.227" errors="0">
+<testcase name="Read excel file contents" classname="excelManipulation.spec.js" time="0.227">
+<system-out>
+<![CDATA[[
+  {
+    username: [32m'U1'[39m,
+    password: [32m'P1'[39m,
+    firstname: [32m'TestFN1'[39m,
+    lastname: [32m'TestLN1'[39m,
+    address: [32m'Test ADDR1'[39m,
+    postalcode: [33m123456[39m
+  },
+  {
+    username: [32m'U2'[39m,
+    password: [32m'P2'[39m,
+    firstname: [32m'TestFN2'[39m,
+    lastname: [32m'TestLN2'[39m,
+    address: [32m'Test ADDR2'[39m,
+    postalcode: [33m549875[39m
+  },
+  {
+    username: [32m'U3'[39m,
+    password: [32m'P3'[39m,
+    firstname: [32m'TestFN3'[39m,
+    lastname: [32m'TestLN3'[39m,
+    address: [32m'Test ADDR3'[39m,
+    postalcode: [33m473865[39m
+  },
+  {
+    username: [32m'U4'[39m,
+    password: [32m'P4'[39m,
+    firstname: [32m'TestFN4'[39m,
+    lastname: [32m'TestLN4'[39m,
+    address: [32m'Test ADDR4'[39m,
+    postalcode: [33m847533[39m
+  },
+  {
+    username: [32m'U5'[39m,
+    password: [32m'P5'[39m,
+    firstname: [32m'TestFN5'[39m,
+    lastname: [32m'TestLN5'[39m,
+    address: [32m'Test ADDR5'[39m,
+    postalcode: [33m548765[39m
+  }
+]
+U1:P1
+U2:P2
+U3:P3
+[33m3[39m
+U3 present at index 3
+]]>
+</system-out>
+</testcase>
+<testcase name="Write excel file contents" classname="excelManipulation.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="testdbconnection.spec.js" timestamp="2024-02-26T05:11:44.060Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Test MYSQL Database Connection with AWS RDS" classname="testdbconnection.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="APITests.spec.js" timestamp="2024-02-26T05:11:44.060Z" hostname="webkit" tests="9" failures="0" skipped="0" time="12.854" errors="0">
+<testcase name="Create Token" classname="APITests.spec.js" time="2.093">
+<system-out>
+<![CDATA[{ token: [32m'77f03fe86004c2a'[39m }
+Token : 77f03fe86004c2a
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by all IDs" classname="APITests.spec.js" time="1.359">
+<system-out>
+<![CDATA[Get Booking All IDs: [
+  { bookingid: [33m395[39m }, { bookingid: [33m475[39m }, { bookingid: [33m572[39m }, { bookingid: [33m453[39m },
+  { bookingid: [33m439[39m }, { bookingid: [33m597[39m }, { bookingid: [33m263[39m }, { bookingid: [33m420[39m },
+  { bookingid: [33m461[39m }, { bookingid: [33m514[39m }, { bookingid: [33m623[39m }, { bookingid: [33m318[39m },
+  { bookingid: [33m571[39m }, { bookingid: [33m502[39m }, { bookingid: [33m39[39m },  { bookingid: [33m25[39m },
+  { bookingid: [33m205[39m }, { bookingid: [33m673[39m }, { bookingid: [33m421[39m }, { bookingid: [33m251[39m },
+  { bookingid: [33m598[39m }, { bookingid: [33m680[39m }, { bookingid: [33m77[39m },  { bookingid: [33m109[39m },
+  { bookingid: [33m470[39m }, { bookingid: [33m92[39m },  { bookingid: [33m293[39m }, { bookingid: [33m664[39m },
+  { bookingid: [33m89[39m },  { bookingid: [33m302[39m }, { bookingid: [33m363[39m }, { bookingid: [33m566[39m },
+  { bookingid: [33m562[39m }, { bookingid: [33m113[39m }, { bookingid: [33m324[39m }, { bookingid: [33m447[39m },
+  { bookingid: [33m505[39m }, { bookingid: [33m622[39m }, { bookingid: [33m59[39m },  { bookingid: [33m523[39m },
+  { bookingid: [33m699[39m }, { bookingid: [33m174[39m }, { bookingid: [33m551[39m }, { bookingid: [33m474[39m },
+  { bookingid: [33m511[39m }, { bookingid: [33m9[39m },   { bookingid: [33m579[39m }, { bookingid: [33m657[39m },
+  { bookingid: [33m8[39m },   { bookingid: [33m172[39m }, { bookingid: [33m522[39m }, { bookingid: [33m496[39m },
+  { bookingid: [33m573[39m }, { bookingid: [33m645[39m }, { bookingid: [33m149[39m }, { bookingid: [33m528[39m },
+  { bookingid: [33m367[39m }, { bookingid: [33m397[39m }, { bookingid: [33m278[39m }, { bookingid: [33m197[39m },
+  { bookingid: [33m458[39m }, { bookingid: [33m616[39m }, { bookingid: [33m152[39m }, { bookingid: [33m479[39m },
+  { bookingid: [33m508[39m }, { bookingid: [33m519[39m }, { bookingid: [33m464[39m }, { bookingid: [33m543[39m },
+  { bookingid: [33m667[39m }, { bookingid: [33m163[39m }, { bookingid: [33m241[39m }, { bookingid: [33m371[39m },
+  { bookingid: [33m312[39m }, { bookingid: [33m580[39m }, { bookingid: [33m440[39m }, { bookingid: [33m350[39m },
+  { bookingid: [33m4[39m },   { bookingid: [33m627[39m }, { bookingid: [33m349[39m }, { bookingid: [33m3[39m },
+  { bookingid: [33m553[39m }, { bookingid: [33m42[39m },  { bookingid: [33m345[39m }, { bookingid: [33m86[39m },
+  { bookingid: [33m267[39m }, { bookingid: [33m164[39m }, { bookingid: [33m332[39m }, { bookingid: [33m707[39m },
+  { bookingid: [33m43[39m },  { bookingid: [33m716[39m }, { bookingid: [33m261[39m }, { bookingid: [33m199[39m },
+  { bookingid: [33m692[39m }, { bookingid: [33m603[39m }, { bookingid: [33m66[39m },  { bookingid: [33m80[39m },
+  { bookingid: [33m351[39m }, { bookingid: [33m200[39m }, { bookingid: [33m102[39m }, { bookingid: [33m99[39m },
+  ... 405 more items
+]
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by filter name" classname="APITests.spec.js" time="1.38">
+<system-out>
+<![CDATA[Get Booking by name []
+]]>
+</system-out>
+</testcase>
+<testcase name="getBookingIds by checkin checkout" classname="APITests.spec.js" time="1.355">
+<system-out>
+<![CDATA[Get Booking by checkin/checkout []
+]]>
+</system-out>
+</testcase>
+<testcase name="Create Booking" classname="APITests.spec.js" time="1.32">
+<system-out>
+<![CDATA[Create booking {
+  bookingid: [33m750[39m,
+  booking: {
+    firstname: [32m'MD Niyaz'[39m,
+    lastname: [32m'Hashmi'[39m,
+    totalprice: [33m8279[39m,
+    depositpaid: [33mtrue[39m,
+    bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+    additionalneeds: [32m'Lunch'[39m
+  }
+}
+Booking Id:  [33m750[39m
+]]>
+</system-out>
+</testcase>
+<testcase name="getBooking by ID" classname="APITests.spec.js" time="1.411">
+<system-out>
+<![CDATA[Get Booking by ID {
+  firstname: [32m'MD Niyaz'[39m,
+  lastname: [32m'Hashmi'[39m,
+  totalprice: [33m8279[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+  additionalneeds: [32m'Lunch'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Update Booking" classname="APITests.spec.js" time="1.33">
+<system-out>
+<![CDATA[Token:  77f03fe86004c2a
+Bookingid:  [33m750[39m
+Update Booking {
+  firstname: [32m'MD Niyaz update'[39m,
+  lastname: [32m'Hashmi update'[39m,
+  totalprice: [33m479[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'2024-01-12'[39m, checkout: [32m'2024-12-31'[39m },
+  additionalneeds: [32m'Lunch'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Partial Update Booking" classname="APITests.spec.js" time="1.306">
+<system-out>
+<![CDATA[Token:  77f03fe86004c2a
+Bookingid:  [33m750[39m
+Partial Update Booking {
+  firstname: [32m'MD Niyaz update'[39m,
+  lastname: [32m'Hashmi update'[39m,
+  totalprice: [33m479[39m,
+  depositpaid: [33mtrue[39m,
+  bookingdates: { checkin: [32m'0NaN-aN-aN'[39m, checkout: [32m'2024-12-30'[39m },
+  additionalneeds: [32m'Dinner'[39m
+}
+]]>
+</system-out>
+</testcase>
+<testcase name="Delete Booking" classname="APITests.spec.js" time="1.3">
+<system-out>
+<![CDATA[Token:  77f03fe86004c2a
+Bookingid:  [33m750[39m
+Delete Booking [33m403[39m
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="e2e.spec.js" timestamp="2024-02-26T05:11:44.060Z" hostname="webkit" tests="5" failures="0" skipped="0" time="40.599" errors="0">
+<testcase name="count the number of products" classname="e2e.spec.js" time="5.837">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-count-the-number-of-products-webkit\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="check the product available or not" classname="e2e.spec.js" time="5.191">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-check-the-product-available-or-not-webkit\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Add the product into the cart and assert if it is added or not" classname="e2e.spec.js" time="6.324">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Check the first and last product before applying filter and after applying the filter" classname="e2e.spec.js" time="7.721">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-webkit\video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Add to products into the cart" classname="e2e.spec.js" time="15.526">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\e2e-Add-to-products-into-the-cart-webkit\video.webm]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="excelManipulation.spec.js" timestamp="2024-02-26T05:11:44.060Z" hostname="webkit" tests="2" failures="0" skipped="1" time="0.206" errors="0">
+<testcase name="Read excel file contents" classname="excelManipulation.spec.js" time="0.206">
+<system-out>
+<![CDATA[[
+  {
+    username: [32m'U1'[39m,
+    password: [32m'P1'[39m,
+    firstname: [32m'TestFN1'[39m,
+    lastname: [32m'TestLN1'[39m,
+    address: [32m'Test ADDR1'[39m,
+    postalcode: [33m123456[39m
+  },
+  {
+    username: [32m'U2'[39m,
+    password: [32m'P2'[39m,
+    firstname: [32m'TestFN2'[39m,
+    lastname: [32m'TestLN2'[39m,
+    address: [32m'Test ADDR2'[39m,
+    postalcode: [33m549875[39m
+  },
+  {
+    username: [32m'U3'[39m,
+    password: [32m'P3'[39m,
+    firstname: [32m'TestFN3'[39m,
+    lastname: [32m'TestLN3'[39m,
+    address: [32m'Test ADDR3'[39m,
+    postalcode: [33m473865[39m
+  },
+  {
+    username: [32m'U4'[39m,
+    password: [32m'P4'[39m,
+    firstname: [32m'TestFN4'[39m,
+    lastname: [32m'TestLN4'[39m,
+    address: [32m'Test ADDR4'[39m,
+    postalcode: [33m847533[39m
+  },
+  {
+    username: [32m'U5'[39m,
+    password: [32m'P5'[39m,
+    firstname: [32m'TestFN5'[39m,
+    lastname: [32m'TestLN5'[39m,
+    address: [32m'Test ADDR5'[39m,
+    postalcode: [33m548765[39m
+  }
+]
+U1:P1
+U2:P2
+U3:P3
+[33m3[39m
+U3 present at index 3
+]]>
+</system-out>
+</testcase>
+<testcase name="Write excel file contents" classname="excelManipulation.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="testdbconnection.spec.js" timestamp="2024-02-26T05:11:44.060Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="Test MYSQL Database Connection with AWS RDS" classname="testdbconnection.spec.js" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
 </testsuites>

@@ -16,10 +16,18 @@
     "preserveOutput": "always",
     "reporter": [
       [
-        "html",
+        "list",
         {
-          "outputFolder": "./reports/index.html"
+          "printSteps": true
         }
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "dot",
+        null
       ],
       [
         "junit",
@@ -35,7 +43,9 @@
       ],
       [
         "D:\\playwrightjse2eautomation\\node_modules\\allure-playwright\\dist\\index.js",
-        null
+        {
+          "outputFolder": "./reports/allure-results"
+        }
       ]
     ],
     "reportSlowTests": {
@@ -47,7 +57,7 @@
       {
         "outputDir": "D:/playwrightjse2eautomation/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "id": "chromium",
         "name": "chromium",
         "testDir": "D:/playwrightjse2eautomation/tests",
@@ -60,7 +70,7 @@
       {
         "outputDir": "D:/playwrightjse2eautomation/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "id": "firefox",
         "name": "firefox",
         "testDir": "D:/playwrightjse2eautomation/tests",
@@ -73,7 +83,7 @@
       {
         "outputDir": "D:/playwrightjse2eautomation/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "id": "webkit",
         "name": "webkit",
         "testDir": "D:/playwrightjse2eautomation/tests",
@@ -91,6 +101,1636 @@
     "webServer": null
   },
   "suites": [
+    {
+      "title": "APITests.spec.js",
+      "file": "APITests.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Create Token",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 2182,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{ token: \u001b[32m'c0724ca2f731d7f'\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Token : c0724ca2f731d7f\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:45.535Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-9fc715d36f473be3ba66",
+          "file": "APITests.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by all IDs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1248,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking All IDs: [\n  { bookingid: \u001b[33m395\u001b[39m }, { bookingid: \u001b[33m263\u001b[39m }, { bookingid: \u001b[33m420\u001b[39m }, { bookingid: \u001b[33m318\u001b[39m },\n  { bookingid: \u001b[33m39\u001b[39m },  { bookingid: \u001b[33m25\u001b[39m },  { bookingid: \u001b[33m205\u001b[39m }, { bookingid: \u001b[33m421\u001b[39m },\n  { bookingid: \u001b[33m251\u001b[39m }, { bookingid: \u001b[33m77\u001b[39m },  { bookingid: \u001b[33m109\u001b[39m }, { bookingid: \u001b[33m92\u001b[39m },\n  { bookingid: \u001b[33m293\u001b[39m }, { bookingid: \u001b[33m89\u001b[39m },  { bookingid: \u001b[33m302\u001b[39m }, { bookingid: \u001b[33m363\u001b[39m },\n  { bookingid: \u001b[33m113\u001b[39m }, { bookingid: \u001b[33m324\u001b[39m }, { bookingid: \u001b[33m59\u001b[39m },  { bookingid: \u001b[33m174\u001b[39m },\n  { bookingid: \u001b[33m9\u001b[39m },   { bookingid: \u001b[33m8\u001b[39m },   { bookingid: \u001b[33m172\u001b[39m }, { bookingid: \u001b[33m149\u001b[39m },\n  { bookingid: \u001b[33m367\u001b[39m }, { bookingid: \u001b[33m397\u001b[39m }, { bookingid: \u001b[33m278\u001b[39m }, { bookingid: \u001b[33m197\u001b[39m },\n  { bookingid: \u001b[33m152\u001b[39m }, { bookingid: \u001b[33m163\u001b[39m }, { bookingid: \u001b[33m241\u001b[39m }, { bookingid: \u001b[33m371\u001b[39m },\n  { bookingid: \u001b[33m312\u001b[39m }, { bookingid: \u001b[33m350\u001b[39m }, { bookingid: \u001b[33m4\u001b[39m },   { bookingid: \u001b[33m349\u001b[39m },\n  { bookingid: \u001b[33m3\u001b[39m },   { bookingid: \u001b[33m42\u001b[39m },  { bookingid: \u001b[33m345\u001b[39m }, { bookingid: \u001b[33m86\u001b[39m },\n  { bookingid: \u001b[33m267\u001b[39m }, { bookingid: \u001b[33m164\u001b[39m }, { bookingid: \u001b[33m332\u001b[39m }, { bookingid: \u001b[33m43\u001b[39m },\n  { bookingid: \u001b[33m261\u001b[39m }, { bookingid: \u001b[33m199\u001b[39m }, { bookingid: \u001b[33m66\u001b[39m },  { bookingid: \u001b[33m80\u001b[39m },\n  { bookingid: \u001b[33m351\u001b[39m }, { bookingid: \u001b[33m200\u001b[39m }, { bookingid: \u001b[33m102\u001b[39m }, { bookingid: \u001b[33m99\u001b[39m },\n  { bookingid: \u001b[33m101\u001b[39m }, { bookingid: \u001b[33m145\u001b[39m }, { bookingid: \u001b[33m13\u001b[39m },  { bookingid: \u001b[33m404\u001b[39m },\n  { bookingid: \u001b[33m358\u001b[39m }, { bookingid: \u001b[33m252\u001b[39m }, { bookingid: \u001b[33m414\u001b[39m }, { bookingid: \u001b[33m188\u001b[39m },\n  { bookingid: \u001b[33m35\u001b[39m },  { bookingid: \u001b[33m122\u001b[39m }, { bookingid: \u001b[33m49\u001b[39m },  { bookingid: \u001b[33m71\u001b[39m },\n  { bookingid: \u001b[33m390\u001b[39m }, { bookingid: \u001b[33m327\u001b[39m }, { bookingid: \u001b[33m330\u001b[39m }, { bookingid: \u001b[33m244\u001b[39m },\n  { bookingid: \u001b[33m387\u001b[39m }, { bookingid: \u001b[33m67\u001b[39m },  { bookingid: \u001b[33m34\u001b[39m },  { bookingid: \u001b[33m361\u001b[39m },\n  { bookingid: \u001b[33m87\u001b[39m },  { bookingid: \u001b[33m158\u001b[39m }, { bookingid: \u001b[33m234\u001b[39m }, { bookingid: \u001b[33m137\u001b[39m },\n  { bookingid: \u001b[33m185\u001b[39m }, { bookingid: \u001b[33m125\u001b[39m }, { bookingid: \u001b[33m389\u001b[39m }, { bookingid: \u001b[33m282\u001b[39m },\n  { bookingid: \u001b[33m257\u001b[39m }, { bookingid: \u001b[33m53\u001b[39m },  { bookingid: \u001b[33m370\u001b[39m }, { bookingid: \u001b[33m211\u001b[39m },\n  { bookingid: \u001b[33m62\u001b[39m },  { bookingid: \u001b[33m338\u001b[39m }, { bookingid: \u001b[33m408\u001b[39m }, { bookingid: \u001b[33m233\u001b[39m },\n  { bookingid: \u001b[33m334\u001b[39m }, { bookingid: \u001b[33m37\u001b[39m },  { bookingid: \u001b[33m247\u001b[39m }, { bookingid: \u001b[33m289\u001b[39m },\n  { bookingid: \u001b[33m307\u001b[39m }, { bookingid: \u001b[33m220\u001b[39m }, { bookingid: \u001b[33m416\u001b[39m }, { bookingid: \u001b[33m20\u001b[39m },\n  { bookingid: \u001b[33m111\u001b[39m }, { bookingid: \u001b[33m382\u001b[39m }, { bookingid: \u001b[33m108\u001b[39m }, { bookingid: \u001b[33m100\u001b[39m },\n  ... 206 more items\n]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:47.733Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-c3e43b0e1992025da7ba",
+          "file": "APITests.spec.js",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by filter name",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1403,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by name []\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:48.990Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-1091d546ae7fc6c0259d",
+          "file": "APITests.spec.js",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by checkin checkout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1233,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by checkin/checkout []\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:50.397Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-64a1b27f3f1b3eb8dfae",
+          "file": "APITests.spec.js",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "Create Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1341,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Create booking {\n  bookingid: \u001b[33m461\u001b[39m,\n  booking: {\n    firstname: \u001b[32m'MD Niyaz'\u001b[39m,\n    lastname: \u001b[32m'Hashmi'\u001b[39m,\n    totalprice: \u001b[33m8279\u001b[39m,\n    depositpaid: \u001b[33mtrue\u001b[39m,\n    bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n    additionalneeds: \u001b[32m'Lunch'\u001b[39m\n  }\n}\n"
+                    },
+                    {
+                      "text": "Booking Id:  \u001b[33m461\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:51.634Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-b70aa290aaf916f484f8",
+          "file": "APITests.spec.js",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "getBooking by ID",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1311,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by ID {\n  firstname: \u001b[32m'MD Niyaz'\u001b[39m,\n  lastname: \u001b[32m'Hashmi'\u001b[39m,\n  totalprice: \u001b[33m8279\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n  additionalneeds: \u001b[32m'Lunch'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:52.980Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-3c28e1aedf368f1f13bf",
+          "file": "APITests.spec.js",
+          "line": 98,
+          "column": 1
+        },
+        {
+          "title": "Update Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1253,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  c0724ca2f731d7f\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m461\u001b[39m\n"
+                    },
+                    {
+                      "text": "Update Booking {\n  firstname: \u001b[32m'MD Niyaz update'\u001b[39m,\n  lastname: \u001b[32m'Hashmi update'\u001b[39m,\n  totalprice: \u001b[33m479\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n  additionalneeds: \u001b[32m'Lunch'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:54.294Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-b6fb6318255cf7eb26d3",
+          "file": "APITests.spec.js",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "Partial Update Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1990,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  c0724ca2f731d7f\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m461\u001b[39m\n"
+                    },
+                    {
+                      "text": "Partial Update Booking {\n  firstname: \u001b[32m'MD Niyaz update'\u001b[39m,\n  lastname: \u001b[32m'Hashmi update'\u001b[39m,\n  totalprice: \u001b[33m479\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'0NaN-aN-aN'\u001b[39m, checkout: \u001b[32m'2024-12-30'\u001b[39m },\n  additionalneeds: \u001b[32m'Dinner'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:55.550Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-ddec08cbafb40246c99a",
+          "file": "APITests.spec.js",
+          "line": 140,
+          "column": 1
+        },
+        {
+          "title": "Delete Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1309,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  c0724ca2f731d7f\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m461\u001b[39m\n"
+                    },
+                    {
+                      "text": "Delete Booking \u001b[33m403\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:57.543Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-a907327981c104f74ef5",
+          "file": "APITests.spec.js",
+          "line": 164,
+          "column": 1
+        },
+        {
+          "title": "Create Token",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1757,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{ token: \u001b[32m'e77eccaffe321ba'\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Token : e77eccaffe321ba\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:02.536Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-846d834867555ef1c646",
+          "file": "APITests.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by all IDs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1334,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking All IDs: [\n  { bookingid: \u001b[33m395\u001b[39m }, { bookingid: \u001b[33m475\u001b[39m }, { bookingid: \u001b[33m453\u001b[39m }, { bookingid: \u001b[33m439\u001b[39m },\n  { bookingid: \u001b[33m263\u001b[39m }, { bookingid: \u001b[33m420\u001b[39m }, { bookingid: \u001b[33m461\u001b[39m }, { bookingid: \u001b[33m514\u001b[39m },\n  { bookingid: \u001b[33m318\u001b[39m }, { bookingid: \u001b[33m502\u001b[39m }, { bookingid: \u001b[33m39\u001b[39m },  { bookingid: \u001b[33m25\u001b[39m },\n  { bookingid: \u001b[33m205\u001b[39m }, { bookingid: \u001b[33m421\u001b[39m }, { bookingid: \u001b[33m251\u001b[39m }, { bookingid: \u001b[33m77\u001b[39m },\n  { bookingid: \u001b[33m109\u001b[39m }, { bookingid: \u001b[33m470\u001b[39m }, { bookingid: \u001b[33m92\u001b[39m },  { bookingid: \u001b[33m293\u001b[39m },\n  { bookingid: \u001b[33m89\u001b[39m },  { bookingid: \u001b[33m302\u001b[39m }, { bookingid: \u001b[33m363\u001b[39m }, { bookingid: \u001b[33m566\u001b[39m },\n  { bookingid: \u001b[33m562\u001b[39m }, { bookingid: \u001b[33m113\u001b[39m }, { bookingid: \u001b[33m324\u001b[39m }, { bookingid: \u001b[33m447\u001b[39m },\n  { bookingid: \u001b[33m505\u001b[39m }, { bookingid: \u001b[33m59\u001b[39m },  { bookingid: \u001b[33m523\u001b[39m }, { bookingid: \u001b[33m174\u001b[39m },\n  { bookingid: \u001b[33m551\u001b[39m }, { bookingid: \u001b[33m474\u001b[39m }, { bookingid: \u001b[33m511\u001b[39m }, { bookingid: \u001b[33m9\u001b[39m },\n  { bookingid: \u001b[33m8\u001b[39m },   { bookingid: \u001b[33m172\u001b[39m }, { bookingid: \u001b[33m522\u001b[39m }, { bookingid: \u001b[33m496\u001b[39m },\n  { bookingid: \u001b[33m149\u001b[39m }, { bookingid: \u001b[33m528\u001b[39m }, { bookingid: \u001b[33m367\u001b[39m }, { bookingid: \u001b[33m397\u001b[39m },\n  { bookingid: \u001b[33m278\u001b[39m }, { bookingid: \u001b[33m197\u001b[39m }, { bookingid: \u001b[33m458\u001b[39m }, { bookingid: \u001b[33m152\u001b[39m },\n  { bookingid: \u001b[33m479\u001b[39m }, { bookingid: \u001b[33m508\u001b[39m }, { bookingid: \u001b[33m519\u001b[39m }, { bookingid: \u001b[33m464\u001b[39m },\n  { bookingid: \u001b[33m543\u001b[39m }, { bookingid: \u001b[33m163\u001b[39m }, { bookingid: \u001b[33m241\u001b[39m }, { bookingid: \u001b[33m371\u001b[39m },\n  { bookingid: \u001b[33m312\u001b[39m }, { bookingid: \u001b[33m440\u001b[39m }, { bookingid: \u001b[33m350\u001b[39m }, { bookingid: \u001b[33m4\u001b[39m },\n  { bookingid: \u001b[33m349\u001b[39m }, { bookingid: \u001b[33m3\u001b[39m },   { bookingid: \u001b[33m553\u001b[39m }, { bookingid: \u001b[33m42\u001b[39m },\n  { bookingid: \u001b[33m345\u001b[39m }, { bookingid: \u001b[33m86\u001b[39m },  { bookingid: \u001b[33m267\u001b[39m }, { bookingid: \u001b[33m164\u001b[39m },\n  { bookingid: \u001b[33m332\u001b[39m }, { bookingid: \u001b[33m43\u001b[39m },  { bookingid: \u001b[33m261\u001b[39m }, { bookingid: \u001b[33m199\u001b[39m },\n  { bookingid: \u001b[33m66\u001b[39m },  { bookingid: \u001b[33m80\u001b[39m },  { bookingid: \u001b[33m351\u001b[39m }, { bookingid: \u001b[33m200\u001b[39m },\n  { bookingid: \u001b[33m102\u001b[39m }, { bookingid: \u001b[33m99\u001b[39m },  { bookingid: \u001b[33m101\u001b[39m }, { bookingid: \u001b[33m537\u001b[39m },\n  { bookingid: \u001b[33m145\u001b[39m }, { bookingid: \u001b[33m13\u001b[39m },  { bookingid: \u001b[33m404\u001b[39m }, { bookingid: \u001b[33m358\u001b[39m },\n  { bookingid: \u001b[33m534\u001b[39m }, { bookingid: \u001b[33m252\u001b[39m }, { bookingid: \u001b[33m526\u001b[39m }, { bookingid: \u001b[33m414\u001b[39m },\n  { bookingid: \u001b[33m188\u001b[39m }, { bookingid: \u001b[33m471\u001b[39m }, { bookingid: \u001b[33m35\u001b[39m },  { bookingid: \u001b[33m556\u001b[39m },\n  { bookingid: \u001b[33m122\u001b[39m }, { bookingid: \u001b[33m49\u001b[39m },  { bookingid: \u001b[33m71\u001b[39m },  { bookingid: \u001b[33m390\u001b[39m },\n  { bookingid: \u001b[33m430\u001b[39m }, { bookingid: \u001b[33m327\u001b[39m }, { bookingid: \u001b[33m494\u001b[39m }, { bookingid: \u001b[33m330\u001b[39m },\n  ... 304 more items\n]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:04.302Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-07dbdb086230add88021",
+          "file": "APITests.spec.js",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by filter name",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1252,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by name []\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:05.650Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-4a142a8ca1af6d72043d",
+          "file": "APITests.spec.js",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by checkin checkout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1293,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by checkin/checkout []\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:06.906Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-0fdaa5a89c8b8cd00b3e",
+          "file": "APITests.spec.js",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "Create Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1403,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Create booking {\n  bookingid: \u001b[33m598\u001b[39m,\n  booking: {\n    firstname: \u001b[32m'MD Niyaz'\u001b[39m,\n    lastname: \u001b[32m'Hashmi'\u001b[39m,\n    totalprice: \u001b[33m8279\u001b[39m,\n    depositpaid: \u001b[33mtrue\u001b[39m,\n    bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n    additionalneeds: \u001b[32m'Lunch'\u001b[39m\n  }\n}\n"
+                    },
+                    {
+                      "text": "Booking Id:  \u001b[33m598\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:08.203Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-3d32de4f7ce018d7bb09",
+          "file": "APITests.spec.js",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "getBooking by ID",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1277,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by ID {\n  firstname: \u001b[32m'MD Niyaz'\u001b[39m,\n  lastname: \u001b[32m'Hashmi'\u001b[39m,\n  totalprice: \u001b[33m8279\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n  additionalneeds: \u001b[32m'Lunch'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:09.610Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-b3116576aecf7154d4a6",
+          "file": "APITests.spec.js",
+          "line": 98,
+          "column": 1
+        },
+        {
+          "title": "Update Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1397,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  e77eccaffe321ba\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m598\u001b[39m\n"
+                    },
+                    {
+                      "text": "Update Booking {\n  firstname: \u001b[32m'MD Niyaz update'\u001b[39m,\n  lastname: \u001b[32m'Hashmi update'\u001b[39m,\n  totalprice: \u001b[33m479\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n  additionalneeds: \u001b[32m'Lunch'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:10.890Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-510c369657cabdaa71c2",
+          "file": "APITests.spec.js",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "Partial Update Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1327,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  e77eccaffe321ba\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m598\u001b[39m\n"
+                    },
+                    {
+                      "text": "Partial Update Booking {\n  firstname: \u001b[32m'MD Niyaz update'\u001b[39m,\n  lastname: \u001b[32m'Hashmi update'\u001b[39m,\n  totalprice: \u001b[33m479\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'0NaN-aN-aN'\u001b[39m, checkout: \u001b[32m'2024-12-30'\u001b[39m },\n  additionalneeds: \u001b[32m'Dinner'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:12.290Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-71e4a4e7fd784fca3b6c",
+          "file": "APITests.spec.js",
+          "line": 140,
+          "column": 1
+        },
+        {
+          "title": "Delete Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 1372,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  e77eccaffe321ba\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m598\u001b[39m\n"
+                    },
+                    {
+                      "text": "Delete Booking \u001b[33m403\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:13.620Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-305690df8fdb0525b692",
+          "file": "APITests.spec.js",
+          "line": 164,
+          "column": 1
+        },
+        {
+          "title": "Create Token",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 2093,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{ token: \u001b[32m'77f03fe86004c2a'\u001b[39m }\n"
+                    },
+                    {
+                      "text": "Token : 77f03fe86004c2a\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:19.016Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-0e56cef85be27d57d48c",
+          "file": "APITests.spec.js",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by all IDs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1359,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking All IDs: [\n  { bookingid: \u001b[33m395\u001b[39m }, { bookingid: \u001b[33m475\u001b[39m }, { bookingid: \u001b[33m572\u001b[39m }, { bookingid: \u001b[33m453\u001b[39m },\n  { bookingid: \u001b[33m439\u001b[39m }, { bookingid: \u001b[33m597\u001b[39m }, { bookingid: \u001b[33m263\u001b[39m }, { bookingid: \u001b[33m420\u001b[39m },\n  { bookingid: \u001b[33m461\u001b[39m }, { bookingid: \u001b[33m514\u001b[39m }, { bookingid: \u001b[33m623\u001b[39m }, { bookingid: \u001b[33m318\u001b[39m },\n  { bookingid: \u001b[33m571\u001b[39m }, { bookingid: \u001b[33m502\u001b[39m }, { bookingid: \u001b[33m39\u001b[39m },  { bookingid: \u001b[33m25\u001b[39m },\n  { bookingid: \u001b[33m205\u001b[39m }, { bookingid: \u001b[33m673\u001b[39m }, { bookingid: \u001b[33m421\u001b[39m }, { bookingid: \u001b[33m251\u001b[39m },\n  { bookingid: \u001b[33m598\u001b[39m }, { bookingid: \u001b[33m680\u001b[39m }, { bookingid: \u001b[33m77\u001b[39m },  { bookingid: \u001b[33m109\u001b[39m },\n  { bookingid: \u001b[33m470\u001b[39m }, { bookingid: \u001b[33m92\u001b[39m },  { bookingid: \u001b[33m293\u001b[39m }, { bookingid: \u001b[33m664\u001b[39m },\n  { bookingid: \u001b[33m89\u001b[39m },  { bookingid: \u001b[33m302\u001b[39m }, { bookingid: \u001b[33m363\u001b[39m }, { bookingid: \u001b[33m566\u001b[39m },\n  { bookingid: \u001b[33m562\u001b[39m }, { bookingid: \u001b[33m113\u001b[39m }, { bookingid: \u001b[33m324\u001b[39m }, { bookingid: \u001b[33m447\u001b[39m },\n  { bookingid: \u001b[33m505\u001b[39m }, { bookingid: \u001b[33m622\u001b[39m }, { bookingid: \u001b[33m59\u001b[39m },  { bookingid: \u001b[33m523\u001b[39m },\n  { bookingid: \u001b[33m699\u001b[39m }, { bookingid: \u001b[33m174\u001b[39m }, { bookingid: \u001b[33m551\u001b[39m }, { bookingid: \u001b[33m474\u001b[39m },\n  { bookingid: \u001b[33m511\u001b[39m }, { bookingid: \u001b[33m9\u001b[39m },   { bookingid: \u001b[33m579\u001b[39m }, { bookingid: \u001b[33m657\u001b[39m },\n  { bookingid: \u001b[33m8\u001b[39m },   { bookingid: \u001b[33m172\u001b[39m }, { bookingid: \u001b[33m522\u001b[39m }, { bookingid: \u001b[33m496\u001b[39m },\n  { bookingid: \u001b[33m573\u001b[39m }, { bookingid: \u001b[33m645\u001b[39m }, { bookingid: \u001b[33m149\u001b[39m }, { bookingid: \u001b[33m528\u001b[39m },\n  { bookingid: \u001b[33m367\u001b[39m }, { bookingid: \u001b[33m397\u001b[39m }, { bookingid: \u001b[33m278\u001b[39m }, { bookingid: \u001b[33m197\u001b[39m },\n  { bookingid: \u001b[33m458\u001b[39m }, { bookingid: \u001b[33m616\u001b[39m }, { bookingid: \u001b[33m152\u001b[39m }, { bookingid: \u001b[33m479\u001b[39m },\n  { bookingid: \u001b[33m508\u001b[39m }, { bookingid: \u001b[33m519\u001b[39m }, { bookingid: \u001b[33m464\u001b[39m }, { bookingid: \u001b[33m543\u001b[39m },\n  { bookingid: \u001b[33m667\u001b[39m }, { bookingid: \u001b[33m163\u001b[39m }, { bookingid: \u001b[33m241\u001b[39m }, { bookingid: \u001b[33m371\u001b[39m },\n  { bookingid: \u001b[33m312\u001b[39m }, { bookingid: \u001b[33m580\u001b[39m }, { bookingid: \u001b[33m440\u001b[39m }, { bookingid: \u001b[33m350\u001b[39m },\n  { bookingid: \u001b[33m4\u001b[39m },   { bookingid: \u001b[33m627\u001b[39m }, { bookingid: \u001b[33m349\u001b[39m }, { bookingid: \u001b[33m3\u001b[39m },\n  { bookingid: \u001b[33m553\u001b[39m }, { bookingid: \u001b[33m42\u001b[39m },  { bookingid: \u001b[33m345\u001b[39m }, { bookingid: \u001b[33m86\u001b[39m },\n  { bookingid: \u001b[33m267\u001b[39m }, { bookingid: \u001b[33m164\u001b[39m }, { bookingid: \u001b[33m332\u001b[39m }, { bookingid: \u001b[33m707\u001b[39m },\n  { bookingid: \u001b[33m43\u001b[39m },  { bookingid: \u001b[33m716\u001b[39m }, { bookingid: \u001b[33m261\u001b[39m }, { bookingid: \u001b[33m199\u001b[39m },\n  { bookingid: \u001b[33m692\u001b[39m }, { bookingid: \u001b[33m603\u001b[39m }, { bookingid: \u001b[33m66\u001b[39m },  { bookingid: \u001b[33m80\u001b[39m },\n  { bookingid: \u001b[33m351\u001b[39m }, { bookingid: \u001b[33m200\u001b[39m }, { bookingid: \u001b[33m102\u001b[39m }, { bookingid: \u001b[33m99\u001b[39m },\n  ... 405 more items\n]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:21.135Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-16b4205b2c3e52215aeb",
+          "file": "APITests.spec.js",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by filter name",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1380,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by name []\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:22.500Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-fd3f40c93ec09124eaf3",
+          "file": "APITests.spec.js",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "getBookingIds by checkin checkout",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1355,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by checkin/checkout []\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:23.885Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-24077dabc95e0e0966c5",
+          "file": "APITests.spec.js",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "Create Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1320,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Create booking {\n  bookingid: \u001b[33m750\u001b[39m,\n  booking: {\n    firstname: \u001b[32m'MD Niyaz'\u001b[39m,\n    lastname: \u001b[32m'Hashmi'\u001b[39m,\n    totalprice: \u001b[33m8279\u001b[39m,\n    depositpaid: \u001b[33mtrue\u001b[39m,\n    bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n    additionalneeds: \u001b[32m'Lunch'\u001b[39m\n  }\n}\n"
+                    },
+                    {
+                      "text": "Booking Id:  \u001b[33m750\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:25.244Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-7f369f1ffbfe1455e740",
+          "file": "APITests.spec.js",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "getBooking by ID",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1411,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Get Booking by ID {\n  firstname: \u001b[32m'MD Niyaz'\u001b[39m,\n  lastname: \u001b[32m'Hashmi'\u001b[39m,\n  totalprice: \u001b[33m8279\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n  additionalneeds: \u001b[32m'Lunch'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:26.568Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-99f6a55efc0135681dd8",
+          "file": "APITests.spec.js",
+          "line": 98,
+          "column": 1
+        },
+        {
+          "title": "Update Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1330,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  77f03fe86004c2a\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m750\u001b[39m\n"
+                    },
+                    {
+                      "text": "Update Booking {\n  firstname: \u001b[32m'MD Niyaz update'\u001b[39m,\n  lastname: \u001b[32m'Hashmi update'\u001b[39m,\n  totalprice: \u001b[33m479\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'2024-01-12'\u001b[39m, checkout: \u001b[32m'2024-12-31'\u001b[39m },\n  additionalneeds: \u001b[32m'Lunch'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:27.983Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-66e6ad11b032502bc908",
+          "file": "APITests.spec.js",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "Partial Update Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1306,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  77f03fe86004c2a\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m750\u001b[39m\n"
+                    },
+                    {
+                      "text": "Partial Update Booking {\n  firstname: \u001b[32m'MD Niyaz update'\u001b[39m,\n  lastname: \u001b[32m'Hashmi update'\u001b[39m,\n  totalprice: \u001b[33m479\u001b[39m,\n  depositpaid: \u001b[33mtrue\u001b[39m,\n  bookingdates: { checkin: \u001b[32m'0NaN-aN-aN'\u001b[39m, checkout: \u001b[32m'2024-12-30'\u001b[39m },\n  additionalneeds: \u001b[32m'Dinner'\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:29.324Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-abe50c3124f74c031c92",
+          "file": "APITests.spec.js",
+          "line": 140,
+          "column": 1
+        },
+        {
+          "title": "Delete Booking",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "passed",
+                  "duration": 1300,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Token:  77f03fe86004c2a\n"
+                    },
+                    {
+                      "text": "Bookingid:  \u001b[33m750\u001b[39m\n"
+                    },
+                    {
+                      "text": "Delete Booking \u001b[33m403\u001b[39m\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:30.636Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6e518dd64a90dc053d2-1cfca9016f2dc602f395",
+          "file": "APITests.spec.js",
+          "line": 164,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "e2e.spec.js",
+      "file": "e2e.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "count the number of products",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 3223,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:45.601Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-count-the-number-of-products-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-cc7550182acbd726fa10",
+          "file": "e2e.spec.js",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "check the product available or not",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 2413,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:49.806Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-check-the-product-available-or-not-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-15fab78d55c95b66d483",
+          "file": "e2e.spec.js",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "Add the product into the cart and assert if it is added or not",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 2820,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:52.222Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-da8aef64c1285f59849f",
+          "file": "e2e.spec.js",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "Check the first and last product before applying filter and after applying the filter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 2794,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:55.046Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-b8b5a55eb513c25a4c93",
+          "file": "e2e.spec.js",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "Add to products into the cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 4625,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:11:57.843Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-to-products-into-the-cart-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-7fe2ceb1ecc8eb6e4ab3",
+          "file": "e2e.spec.js",
+          "line": 72,
+          "column": 1
+        },
+        {
+          "title": "count the number of products",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 6879,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:03.946Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-count-the-number-of-products-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-70fadd6d2ac7245c7943",
+          "file": "e2e.spec.js",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "check the product available or not",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 3548,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:12.814Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-check-the-product-available-or-not-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-d0c7e03b4f405f72a4ab",
+          "file": "e2e.spec.js",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "Add the product into the cart and assert if it is added or not",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 4019,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:16.366Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-f7413951bc53c0f856cd",
+          "file": "e2e.spec.js",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "Check the first and last product before applying filter and after applying the filter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 4637,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:20.389Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-96bcfbd5b3ac85ae4a55",
+          "file": "e2e.spec.js",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "Add to products into the cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 6476,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:25.029Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-to-products-into-the-cart-firefox\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-284e727591148296514d",
+          "file": "e2e.spec.js",
+          "line": 72,
+          "column": 1
+        },
+        {
+          "title": "count the number of products",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "passed",
+                  "duration": 5837,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:34.968Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-count-the-number-of-products-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-7b121564b48f69a960b0",
+          "file": "e2e.spec.js",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "check the product available or not",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "passed",
+                  "duration": 5191,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:42.445Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-check-the-product-available-or-not-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-466801a6c904c00c4cc2",
+          "file": "e2e.spec.js",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "Add the product into the cart and assert if it is added or not",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "passed",
+                  "duration": 6324,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:47.640Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-the-product-into-the-cart-and-assert-if-it-is-added-or-not-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-fccd7883aaf379b378d1",
+          "file": "e2e.spec.js",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "Check the first and last product before applying filter and after applying the filter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "passed",
+                  "duration": 7721,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:53.967Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Check-the-first-and-last-product-before-applying-filter-and-after-applying-the-filter-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-ead56960abf7964fc345",
+          "file": "e2e.spec.js",
+          "line": 51,
+          "column": 1
+        },
+        {
+          "title": "Add to products into the cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "passed",
+                  "duration": 15526,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:13:01.690Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\playwrightjse2eautomation\\test-results\\e2e-Add-to-products-into-the-cart-webkit\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "616cc0f313d283bb66d2-0b72ddec2bd60858e7a2",
+          "file": "e2e.spec.js",
+          "line": 72,
+          "column": 1
+        }
+      ]
+    },
     {
       "title": "excelManipulation.spec.js",
       "file": "excelManipulation.spec.js",
@@ -112,7 +1752,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 239,
+                  "duration": 351,
                   "errors": [],
                   "stdout": [
                     {
@@ -136,7 +1776,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-18T16:22:30.837Z",
+                  "startTime": "2024-02-26T05:12:00.007Z",
                   "attachments": []
                 }
               ],
@@ -155,37 +1795,34 @@
           "tests": [
             {
               "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
               "projectId": "chromium",
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 319,
+                  "workerIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "\u001b[90mundefined\u001b[39m\n"
-                    },
-                    {
-                      "text": "\u001b[90mundefined\u001b[39m\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-18T16:22:30.892Z",
+                  "startTime": "2024-02-26T05:12:00.377Z",
                   "attachments": []
                 }
               ],
-              "status": "expected"
+              "status": "skipped"
             }
           ],
           "id": "b2b6d82e069da4a35743-a03f165f51500923bede",
           "file": "excelManipulation.spec.js",
-          "line": 26,
-          "column": 5
+          "line": 23,
+          "column": 6
         },
         {
           "title": "Read excel file contents",
@@ -202,7 +1839,7 @@
                 {
                   "workerIndex": 2,
                   "status": "passed",
-                  "duration": 131,
+                  "duration": 227,
                   "errors": [],
                   "stdout": [
                     {
@@ -226,7 +1863,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-18T16:22:33.189Z",
+                  "startTime": "2024-02-26T05:12:16.215Z",
                   "attachments": []
                 }
               ],
@@ -240,59 +1877,39 @@
         },
         {
           "title": "Write excel file contents",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
               "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
               "projectId": "firefox",
               "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 3,
-                  "status": "failed",
-                  "duration": 171,
-                  "error": {
-                    "message": "Error: Worksheet with name |Sheet4| already exists!",
-                    "stack": "Error: Worksheet with name |Sheet4| already exists!\n    at Object.book_append_sheet (D:\\playwrightjse2eautomation\\node_modules\\xlsx\\xlsx.js:24227:45)\n    at CommonUtils.writeExcel (D:\\playwrightjse2eautomation\\utils\\common.js:18:20)\n    at D:\\playwrightjse2eautomation\\tests\\excelManipulation.spec.js:39:39",
-                    "location": {
-                      "file": "D:\\playwrightjse2eautomation\\utils\\common.js",
-                      "column": 20,
-                      "line": 18
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m..\\utils\\common.js:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m         \u001b[90m//const sheet = workbook.Sheets[workbook.SheetNames[0]];\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mconst\u001b[39m jsonToSheet \u001b[33m=\u001b[39m \u001b[33mXLSX\u001b[39m\u001b[33m.\u001b[39mutils\u001b[33m.\u001b[39mjson_to_sheet(dataToWrite)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m         \u001b[33mXLSX\u001b[39m\u001b[33m.\u001b[39mutils\u001b[33m.\u001b[39mbook_append_sheet(workbook\u001b[33m,\u001b[39mjsonToSheet\u001b[33m,\u001b[39m\u001b[32m\"Sheet4\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m         \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[33mXLSX\u001b[39m\u001b[33m.\u001b[39mwriteFile(workbook\u001b[33m,\u001b[39mfileName)\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m         console\u001b[33m.\u001b[39mlog(data)\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mreturn\u001b[39m data\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\playwrightjse2eautomation\\utils\\common.js",
-                        "column": 20,
-                        "line": 18
-                      },
-                      "message": "Error: Worksheet with name |Sheet4| already exists!\n\n\u001b[90m   at \u001b[39m..\\utils\\common.js:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m         \u001b[90m//const sheet = workbook.Sheets[workbook.SheetNames[0]];\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mconst\u001b[39m jsonToSheet \u001b[33m=\u001b[39m \u001b[33mXLSX\u001b[39m\u001b[33m.\u001b[39mutils\u001b[33m.\u001b[39mjson_to_sheet(dataToWrite)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m         \u001b[33mXLSX\u001b[39m\u001b[33m.\u001b[39mutils\u001b[33m.\u001b[39mbook_append_sheet(workbook\u001b[33m,\u001b[39mjsonToSheet\u001b[33m,\u001b[39m\u001b[32m\"Sheet4\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m         \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[33mXLSX\u001b[39m\u001b[33m.\u001b[39mwriteFile(workbook\u001b[33m,\u001b[39mfileName)\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m         console\u001b[33m.\u001b[39mlog(data)\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mreturn\u001b[39m data\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at Object.book_append_sheet (D:\\playwrightjse2eautomation\\node_modules\\xlsx\\xlsx.js:24227:45)\u001b[22m\n\u001b[2m    at CommonUtils.writeExcel (D:\\playwrightjse2eautomation\\utils\\common.js:18:20)\u001b[22m\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\excelManipulation.spec.js:39:39\u001b[22m"
-                    }
-                  ],
+                  "workerIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-18T16:22:33.214Z",
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "D:\\playwrightjse2eautomation\\utils\\common.js",
-                    "column": 20,
-                    "line": 18
-                  }
+                  "startTime": "2024-02-26T05:12:16.461Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "skipped"
             }
           ],
           "id": "b2b6d82e069da4a35743-2ecc1d5599cc3e901b21",
           "file": "excelManipulation.spec.js",
-          "line": 26,
-          "column": 5
+          "line": 23,
+          "column": 6
         },
         {
           "title": "Read excel file contents",
@@ -309,7 +1926,7 @@
                 {
                   "workerIndex": 4,
                   "status": "passed",
-                  "duration": 145,
+                  "duration": 206,
                   "errors": [],
                   "stdout": [
                     {
@@ -333,7 +1950,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-18T16:22:35.173Z",
+                  "startTime": "2024-02-26T05:12:32.382Z",
                   "attachments": []
                 }
               ],
@@ -347,70 +1964,166 @@
         },
         {
           "title": "Write excel file contents",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
               "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
               "projectId": "webkit",
               "projectName": "webkit",
               "results": [
                 {
-                  "workerIndex": 5,
-                  "status": "failed",
-                  "duration": 171,
-                  "error": {
-                    "message": "Error: Worksheet with name |Sheet4| already exists!",
-                    "stack": "Error: Worksheet with name |Sheet4| already exists!\n    at Object.book_append_sheet (D:\\playwrightjse2eautomation\\node_modules\\xlsx\\xlsx.js:24227:45)\n    at CommonUtils.writeExcel (D:\\playwrightjse2eautomation\\utils\\common.js:18:20)\n    at D:\\playwrightjse2eautomation\\tests\\excelManipulation.spec.js:39:39",
-                    "location": {
-                      "file": "D:\\playwrightjse2eautomation\\utils\\common.js",
-                      "column": 20,
-                      "line": 18
-                    },
-                    "snippet": "\u001b[90m   at \u001b[39m..\\utils\\common.js:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m         \u001b[90m//const sheet = workbook.Sheets[workbook.SheetNames[0]];\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mconst\u001b[39m jsonToSheet \u001b[33m=\u001b[39m \u001b[33mXLSX\u001b[39m\u001b[33m.\u001b[39mutils\u001b[33m.\u001b[39mjson_to_sheet(dataToWrite)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m         \u001b[33mXLSX\u001b[39m\u001b[33m.\u001b[39mutils\u001b[33m.\u001b[39mbook_append_sheet(workbook\u001b[33m,\u001b[39mjsonToSheet\u001b[33m,\u001b[39m\u001b[32m\"Sheet4\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m         \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[33mXLSX\u001b[39m\u001b[33m.\u001b[39mwriteFile(workbook\u001b[33m,\u001b[39mfileName)\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m         console\u001b[33m.\u001b[39mlog(data)\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mreturn\u001b[39m data\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\playwrightjse2eautomation\\utils\\common.js",
-                        "column": 20,
-                        "line": 18
-                      },
-                      "message": "Error: Worksheet with name |Sheet4| already exists!\n\n\u001b[90m   at \u001b[39m..\\utils\\common.js:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m         \u001b[90m//const sheet = workbook.Sheets[workbook.SheetNames[0]];\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m         \u001b[36mconst\u001b[39m jsonToSheet \u001b[33m=\u001b[39m \u001b[33mXLSX\u001b[39m\u001b[33m.\u001b[39mutils\u001b[33m.\u001b[39mjson_to_sheet(dataToWrite)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m         \u001b[33mXLSX\u001b[39m\u001b[33m.\u001b[39mutils\u001b[33m.\u001b[39mbook_append_sheet(workbook\u001b[33m,\u001b[39mjsonToSheet\u001b[33m,\u001b[39m\u001b[32m\"Sheet4\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m         \u001b[36mconst\u001b[39m data \u001b[33m=\u001b[39m \u001b[33mXLSX\u001b[39m\u001b[33m.\u001b[39mwriteFile(workbook\u001b[33m,\u001b[39mfileName)\u001b[0m\n\u001b[0m \u001b[90m 20 |\u001b[39m         console\u001b[33m.\u001b[39mlog(data)\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m         \u001b[36mreturn\u001b[39m data\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at Object.book_append_sheet (D:\\playwrightjse2eautomation\\node_modules\\xlsx\\xlsx.js:24227:45)\u001b[22m\n\u001b[2m    at CommonUtils.writeExcel (D:\\playwrightjse2eautomation\\utils\\common.js:18:20)\u001b[22m\n\u001b[2m    at D:\\playwrightjse2eautomation\\tests\\excelManipulation.spec.js:39:39\u001b[22m"
-                    }
-                  ],
+                  "workerIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-02-18T16:22:35.212Z",
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "D:\\playwrightjse2eautomation\\utils\\common.js",
-                    "column": 20,
-                    "line": 18
-                  }
+                  "startTime": "2024-02-26T05:12:32.597Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "skipped"
             }
           ],
           "id": "b2b6d82e069da4a35743-78a9813c5f0f9894eb37",
           "file": "excelManipulation.spec.js",
-          "line": 26,
-          "column": 5
+          "line": 23,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "testdbconnection.spec.js",
+      "file": "testdbconnection.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Test MYSQL Database Connection with AWS RDS",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:00.384Z",
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "e76f08e0cdb41975171c-9b77b48b9abf1347d7a9",
+          "file": "testdbconnection.spec.js",
+          "line": 4,
+          "column": 6
+        },
+        {
+          "title": "Test MYSQL Database Connection with AWS RDS",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:16.466Z",
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "e76f08e0cdb41975171c-0796ddc626b8ca7fe70b",
+          "file": "testdbconnection.spec.js",
+          "line": 4,
+          "column": 6
+        },
+        {
+          "title": "Test MYSQL Database Connection with AWS RDS",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-02-26T05:12:32.603Z",
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "e76f08e0cdb41975171c-c4455c2abde9022e7e44",
+          "file": "testdbconnection.spec.js",
+          "line": 4,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-02-18T16:22:28.703Z",
-    "duration": 6740.679,
-    "expected": 4,
-    "skipped": 0,
-    "unexpected": 2,
+    "startTime": "2024-02-26T05:11:43.470Z",
+    "duration": 93896.30399999999,
+    "expected": 45,
+    "skipped": 6,
+    "unexpected": 0,
     "flaky": 0
   }
 }

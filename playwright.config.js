@@ -22,10 +22,14 @@ module.exports = defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ['html',{outputFolder:'./reports/index.html'}],
-    ['junit',{outputFolder: './reports/results.xml'}],
-    ['json',{outputFolder: './reports/results.json'}],
-    ['allure-playwright']
+   // ['html',{outputDir:'./reports/'}],
+    ['list', { printSteps: true }],
+    ['line'],
+    ['dot'],
+    //['blob', { outputDir: './reports', fileName: `blob-report.zip`}],
+    ['junit',{outputFile: './reports/results.xml'}],
+    ['json',{outputFile: './reports/results.json'}],
+    ['allure-playwright',{outputFolder:'./reports/allure-results'}]
   ],
   retries: 1,
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -68,7 +72,7 @@ module.exports = defineConfig({
 
     /* Test against branded browsers. */
     // {
-    //   name: 'Microsoft Edge',
+     //  name: 'Microsoft Edge',
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
     // },
     // {

@@ -1,2 +1,0 @@
-{ token: 'f40a3d70c6ac1aa' }
-Token : f40a3d70c6ac1aa
