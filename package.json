@@ -13,10 +13,10 @@
     "html::report": "npx playwright show-report",
     "generate::allure-report": "allure generate ./reports/allure-results -o ./reports/allure-report --clean",
     "open::allure-report": "allure open ./reports/allure-report",
-    "generate::list-report":"npx playwright test e2e.spec.js --reporter=list",
-    "generate::line-report":"npx playwright test e2e.spec.js --reporter=line",
-    "generate::dot-report":"npx playwright test e2e.spec.js --reporter=dot",
-    "generate::blob-report":"npx playwright test e2e.spec.js --reporter=blob"
+    "generate::list-report": "npx playwright test e2e.spec.js --reporter=list",
+    "generate::line-report": "npx playwright test e2e.spec.js --reporter=line",
+    "generate::dot-report": "npx playwright test e2e.spec.js --reporter=dot",
+    "generate::blob-report": "npx playwright test e2e.spec.js --reporter=blob"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +27,8 @@
     "allure-playwright": "^2.12.2"
   },
   "dependencies": {
+    "msnodesqlv8": "^4.1.2",
+    "mssql": "^10.0.2",
     "mysql": "^2.18.1",
     "xlsx": "^0.18.5"
   }

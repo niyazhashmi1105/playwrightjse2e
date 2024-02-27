@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-import {MysqlAwsRdsConnection} from "../utils/dbconnect";
+import {MysqlAwsRdsConnection} from "../utils/mysqldbconnect";
 
 test.skip("Test MYSQL Database Connection with AWS RDS", async({})=>{
 
