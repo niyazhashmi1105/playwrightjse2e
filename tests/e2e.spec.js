@@ -44,7 +44,7 @@ test('Add the product into the cart and assert if it is added or not', async({pa
     const homePage = new HomePage(page)
     await homePage.addProductToCart(testData.addProductCart,'#add-to-cart-sauce-labs-bike-light')
     expect(await page.locator('#remove-sauce-labs-bike-light')).toBeVisible()
-    expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('10')
+    expect(await page.locator('.shopping_cart_link > span').textContent()).toBe('1')
     await homePage.click("//button[text()='Remove']")
 })
 
