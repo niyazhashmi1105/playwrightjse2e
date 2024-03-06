@@ -9,7 +9,7 @@ const sqlConfig = {
     port: "1433",
     options:{
                 trustedConnection: true
-    }
+            }
 }
     
         try{
