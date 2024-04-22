@@ -3,7 +3,7 @@ const fs = require('node:fs');
 
 
 // Load the workbook
-const workbook = XLSX.readFile('../resources/Layout.xlsx');
+const workbook = XLSX.readFile('D:\\MODESE\\TestData\\Student core december\\Student_Core_December_Layout_Rule.xlsx');
 
 
 
@@ -62,7 +62,7 @@ XLSX.utils.book_append_sheet(workbook, ws, 'JoinedData'); // Change the sheet na
 
 
 // Write the updated workbook back to the file
-XLSX.writeFile(workbook, '../resources/Layout_merged.xlsx');
+XLSX.writeFile(workbook, 'D:\\MODESE\\TestData\\Student core december\\Student_Core_December_Layout_Rule.xlsx');
 
 
 

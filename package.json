@@ -22,11 +22,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.41.2",
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.43.1",
     "@types/node": "^20.11.20",
     "allure-playwright": "^2.13.0"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
     "msnodesqlv8": "^4.1.2",
     "mssql": "^10.0.2",
     "mysql": "^2.18.1",
