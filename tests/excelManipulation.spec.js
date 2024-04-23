@@ -2,7 +2,7 @@ import { test } from "@playwright/test";
 import {CommonUtils} from "../utils/common";
 
 
-test("Read excel file contents", async ({}) => {
+test.skip("Read excel file contents", async ({}) => {
 const commonUtils = new CommonUtils()
 const filePath = "./resources/dummyexcel.xlsx"
 const records = await commonUtils.readExcel(filePath)

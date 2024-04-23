@@ -1,4 +1,4 @@
-import { _andriod, test } from "@playwright/test";
+const { _andriod, test } = "@playwright/test";
 const {_android} = require("playwright");
 //const expect = require("chai");
 

@@ -1,5 +1,4 @@
 const { test, expect } = require ('@playwright/test')
-//const { test,expect } = require('../testfixtures/fixtures')
 import  { LoginPage } from '../pages/loginpage'
 import { HomePage } from '../pages/homepage'
 import { CartPage } from '../pages/cartpage'
@@ -19,10 +18,9 @@ test.beforeEach('prerequisite- login to application and landing on the homepage'
     
 })
 
-//test.afterAll('Closing page fixture after every tests', async({page})=>{
-  //      await page.close()
-        
-//})
+test.afterEach('Closing page fixture after every tests', async({page})=>{
+        await page.close()
+})
 
 test('count the number of products', async({page})=>{
         
