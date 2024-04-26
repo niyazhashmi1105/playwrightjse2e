@@ -10,9 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -40,12 +38,6 @@
         {
           "outputFile": "./reports/results.json"
         }
-      ],
-      [
-        "C:\\Users\\niyaz.hashmi\\playwrightjse2e\\node_modules\\allure-playwright\\dist\\index.js",
-        {
-          "outputFolder": "./reports/allure-results"
-        }
       ]
     ],
     "reportSlowTests": {
@@ -53,74 +45,24 @@
       "threshold": 15000
     },
     "quiet": false,
-    "projects": [
-      {
-        "outputDir": "C:/Users/niyaz.hashmi/playwrightjse2e/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "C:/Users/niyaz.hashmi/playwrightjse2e/tests",
-        "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 30000
-      }
-    ],
+    "projects": [],
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.43.1",
     "workers": 4,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "lambdatest.spec.js",
-      "file": "lambdatest.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "LambdaTest set up",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 18360,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-23T13:24:48.491Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "1b2126da70830c892c0a-be1481295e40b72db593",
-          "file": "lambdatest.spec.js",
-          "line": 64,
-          "column": 5
-        }
-      ]
+      "message": "Error: No tests found",
+      "stack": "Error: No tests found"
     }
   ],
-  "errors": [],
   "stats": {
-    "startTime": "2024-04-23T13:24:47.628Z",
-    "duration": 20000.3,
-    "expected": 1,
+    "startTime": "2024-04-26T04:54:04.752Z",
+    "duration": 14.359000000000037,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-import {CommonUtils} from "../utils/common";
+import {CommonUtils} from "./common";
 
 
 test.skip("Read excel file contents", async ({}) => {
