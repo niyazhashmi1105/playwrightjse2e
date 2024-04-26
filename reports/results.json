@@ -10,7 +10,9 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 1
+    },
     "preserveOutput": "always",
     "reporter": [
       [
@@ -72,17 +74,53 @@
     "workers": 4,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
-      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+      "title": "lambdatest.spec.js",
+      "file": "lambdatest.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "LambdaTest set up",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 18360,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-04-23T13:24:48.491Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1b2126da70830c892c0a-be1481295e40b72db593",
+          "file": "lambdatest.spec.js",
+          "line": 64,
+          "column": 5
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2024-04-23T08:21:16.557Z",
-    "duration": 33.04600000000005,
-    "expected": 0,
+    "startTime": "2024-04-23T13:24:47.628Z",
+    "duration": 20000.3,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

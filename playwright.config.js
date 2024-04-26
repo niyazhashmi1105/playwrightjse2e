@@ -29,7 +29,7 @@ module.exports = defineConfig({
     //['blob', { outputDir: './reports', fileName: `blob-report.zip`}],
     ['junit',{outputFile: './reports/results.xml'}],
     ['json',{outputFile: './reports/results.json'}],
-    ['allure-playwright',{outputFolder:'./reports/allure-results'}]
+    //['allure-playwright',{outputFolder:'./reports/allure-results'}]
   ],
   retries: 0,
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -45,12 +45,12 @@ module.exports = defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {
+ /*   {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
       //fullyParallel : true
     },
- /* {
+  {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
     },

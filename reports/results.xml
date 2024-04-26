@@ -1,2 +1,6 @@
-<testsuites id="" name="" tests="0" failures="0" skipped="0" errors="0" time="0.0027009999999999083">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="19.901203">
+<testsuite name="lambdatest.spec.js" timestamp="2024-04-23T13:24:47.732Z" hostname="chromium" tests="1" failures="0" skipped="0" time="18.36" errors="0">
+<testcase name="LambdaTest set up" classname="lambdatest.spec.js" time="18.36">
+</testcase>
+</testsuite>
 </testsuites>
