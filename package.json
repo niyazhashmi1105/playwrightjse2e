@@ -25,11 +25,9 @@
     "@faker-js/faker": "^8.4.1",
     "@playwright/test": "^1.43.1",
     "@types/node": "^20.11.20",
-    "allure-playwright": "^2.13.0",
-    "chai": "^5.1.0"
+    "allure-playwright": "^2.15.1"
   },
   "dependencies": {
-    "expect": "^29.7.0",
     "fs": "^0.0.1-security",
     "msnodesqlv8": "^4.1.2",
     "mssql": "^10.0.2",
