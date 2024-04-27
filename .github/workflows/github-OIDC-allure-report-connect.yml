@@ -26,8 +26,7 @@ jobs:
       - name: Install Allure Commandline
         run: npm install -g allure-commandline --save-dev
       - name: Delete Existing Allure-Report
-        run: rmdir -r ./reports/allure-report
-             rmdir -r ./reports/allure-results
+        run: rmdir -r ./reports/allure-results
       - name: Run Playwright tests
         run: npm run test::web
       - name: Generate Allure Report
