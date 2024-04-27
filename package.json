@@ -9,14 +9,15 @@
     "test::api": "npx playwright test APITests.spec.js --workers=1",
     "test::ui": "npx playwright test --ui",
     "test::headed": "npx playwright test --headed",
-    "test::chrome": "npx playwright test --headed project chromium e2e.spec.js",
+    "test::chrome": "npx playwright test --headed pro ject chromium e2e.spec.js",
     "html::report": "npx playwright show-report",
     "generate::allure-report": "allure generate ./reports/allure-results -o ./reports/allure-report --clean",
     "open::allure-report": "allure open ./reports/allure-report",
     "generate::list-report": "npx playwright test e2e.spec.js --reporter=list",
     "generate::line-report": "npx playwright test e2e.spec.js --reporter=line",
     "generate::dot-report": "npx playwright test e2e.spec.js --reporter=dot",
-    "generate::blob-report": "npx playwright test e2e.spec.js --reporter=blob"
+    "generate::blob-report": "npx playwright test e2e.spec.js --reporter=blob",
+    "delete::allure-report": "rmdir -r ./reports/allure-report"
   },
   "keywords": [],
   "author": "",

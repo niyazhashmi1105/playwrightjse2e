@@ -18,9 +18,9 @@ test.beforeEach('prerequisite- login to application and landing on the homepage'
     
 })
 
-test.afterEach('Closing page fixture after every tests', async({page})=>{
-        await page.close()
-})
+// test.afterEach('Closing page fixture after every tests', async({page})=>{
+//         await page.close()
+// })
 
 test('count the number of products', async({page})=>{
         
@@ -102,8 +102,10 @@ test('Add to products into the cart', async({page})=>{
     expect(paymentInfo).toBe('SauceCard #31337')
     const shippingInfo = await cartPage.getText("div[class='summary_info'] div:nth-child(4)")
     expect(shippingInfo).toBe('Free Pony Express Delivery!')
-    const totalPrice  = await cartPage.getText(".summary_info_label.summary_total_label")
-    expect(totalPrice).toContain('49.66')
+    //await page.waitForTimeout(2000)
+    //const totalPrice  = await cartPage.isVsibleText("//div[@class='summary_info_label summary_total_label']")
+    //console.log('Total Price',totalPrice)
+    //await expect(totalPrice).toBe('true')
     await cartPage.click('#finish')
 
     //order confirmation

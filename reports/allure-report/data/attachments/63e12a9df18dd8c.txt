@@ -1,3 +1,0 @@
-Token:  e77eccaffe321ba
-Bookingid:  598
-Delete Booking 403

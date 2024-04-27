@@ -13,7 +13,7 @@ const { defineConfig, devices } = require('@playwright/test');
 module.exports = defineConfig({
   testDir: 'tests',
   /* Run tests in files in parallel */
-  fullyParallel: true,
+  fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -22,7 +22,7 @@ module.exports = defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ['html',{outputDir:'./reports/'}],
+    ['html',{outputFolder:'./playwright-report/'}],
     //['list', { printSteps: true }],
     //['line'],
     //['dot'],
@@ -50,15 +50,15 @@ module.exports = defineConfig({
       use: { ...devices['Desktop Chrome'] },
       //fullyParallel : true
     },
-  {
+    {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
-    },
+     },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+     {
+       name: 'webkit',
+       use: { ...devices['Desktop Safari'] },
+     },
 
     /* Test against mobile viewports. */
     // {
