@@ -17,7 +17,7 @@
     "generate::line-report": "npx playwright test e2e.spec.js --reporter=line",
     "generate::dot-report": "npx playwright test e2e.spec.js --reporter=dot",
     "generate::blob-report": "npx playwright test e2e.spec.js --reporter=blob",
-    "delete::allure-report": "rmdir -r ./reports/allure-report"
+    "delete::allure-report": "rmdir -r ./reports/allure-results"
   },
   "keywords": [],
   "author": "",
