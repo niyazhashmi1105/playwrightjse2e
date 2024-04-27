@@ -6,7 +6,7 @@ import { CartPage } from '../pages/cartpage'
 const fs = require("fs")
 const testData = JSON.parse(fs.readFileSync(`./testdata/data.json`, `utf-8`))
 
-test.describe.configure({ mode: 'serial' });
+//test.describe.configure({ mode: 'serial' });
 
 test.beforeEach('prerequisite- login to application and landing on the homepage', async({page})=>{
 
