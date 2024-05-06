@@ -28,7 +28,7 @@ jobs:
       # - name: Delete Existing Allure-Report
       #   run: rmdir -r ./reports/allure-results
       - name: Run Playwright tests
-        run: npm run test::api
+        run: npm run test::all
       - name: Generate Allure Report
         run: npm run generate::allure-report
       - uses: actions/upload-artifact@v4
